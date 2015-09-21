@@ -1,0 +1,15 @@
+table.center
+{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+table
+{
+    width:768px;
+}
+
+tr
+{
+    vertical-align:top;
+}

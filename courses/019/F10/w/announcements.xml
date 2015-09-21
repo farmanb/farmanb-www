@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <channel>
+    <title>Math 19-W Announcements</title>
+    <description>Announcements for UVM's Math 19-W, Fall 2010.</description>
+    <link>http://www.cems.uvm.edu/~bfarman/courses/2010/Fall/math-19/w/index.html</link>
+    <atom:link href="http://www.cems.uvm.edu/~bfarman/courses/2010/Fall/math-19/w/announcements.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Website and Syllabus</title>
+      <description>The course website and the syllabus should now be available.</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/2010/Fall/math-19/w/index.html#1</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/2010/Fall/math-19/w/index.html#1</guid>
+    </item>
+    
+    <item>
+      <title>RSS!</title>
+      <description>The RSS feed now works!</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/2010/Fall/math-19/w/index.html#2</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/2010/Fall/math-19/w/index.html#2</guid>
+    </item>    
+
+    <item>
+      <title>Extra Help</title>
+      <description>
+	For anyone interested, I have posted some links for extra help.  These include links to tutors, as well as a link to the times and locations of the math help sessions.
+      </description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/2010/Fall/math-19/w/index.html#3</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/2010/Fall/math-19/w/index.html#3</guid>
+    </item>   
+ 
+  </channel>  
+</rss>

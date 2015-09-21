@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <channel>
+    <title>Math 17G Announcements</title>
+    <description>Announcements for UVM's Math 17G, Fall 2009.</description>
+    <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17</link>
+    <atom:link href="http://www.cems.uvm.edu/~bfarman/courses/Math-17/announcements.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>First announcement...</title>
+      <description>Announcement for 8/27/09</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#1</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#1</guid>
+    </item>
+
+    <item>
+      <title>Syllabus</title>
+      <description>The Syllabus is now (mostly) available.</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#2</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#2</guid>
+    </item>
+    
+    <item>
+      <title>RSS!</title>
+      <description>The RSS feed now works!</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#3</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#3</guid>
+    </item>
+
+    <item>
+      <title>Syllabus Update</title>
+      <description>The Syllabus has been updated and the date of the final exam has been changed to the correct date.</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17/syllabus.html</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#4</guid>
+    </item>
+    
+    <item>
+      <title>Blackboard</title>
+      <description>Blackboard has been enabled.  At this time, I don't think it will do much aside from provide discussion boards.</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#5</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#5</guid>
+    </item>
+
+    <item>
+      <title>Help Sessions</title>
+      <description>Times and places for the Math department's help sessions have been announced for the semester.  I'll be there Mondays and Wednesdays, 5:00pm to 6:00pm.</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#6</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#6</guid>
+    </item>
+
+    <item>
+      <title>Homework 1</title>
+      <description>Homework 1 is now posted.  It is not due until the Thursday after next.</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#7</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#7</guid>
+    </item>
+    
+    <item>
+      <title>Lecture Notes</title>
+      <description>Lecture notes for chapter 1 are now posted.</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17/notes/ch.1/ch1.pdf</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#8</guid>
+    </item>
+
+    <item>
+      <title>Homework 2</title>
+      <description>Homework 2 is now posted.  It is due 9/24/2009.</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#9</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#9</guid>
+    </item>
+
+    <item>
+      <title>Lecture Notes (Ch. 2)</title>
+      <description>Lecture notes for chapter 2 are now posted.</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17/notes/ch.2/ch2.pdf</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#10</guid>
+    </item>
+    
+    <item>
+      <title>Homework 2 Change</title>
+      <description>Homework 2 has been modified.  Some of the problems were taken out.  Some of the problems taken out are now extra credit.  See the homework section of the course website for more details.</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#11</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#11</guid>
+    </item>
+    
+    <item>
+      <title>Homework 4 Posted</title>
+      <description>Homework 4 is now posted.</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#12</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#12</guid>
+    </item>
+
+    <item>
+      <title>Exam 1</title>
+      <description>Exam 1 is scheduled for Tuesday, October 13.</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#13</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#13</guid>
+    </item>
+
+    <item>
+      <title>Homework 6</title>
+      <description>Homework 6 is now posted.</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#14</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#14</guid>
+    </item>
+
+    <item>
+      <title>Homeworks 7 and 8</title>
+      <description>Homework 7 and 8 are now posted.  They are both due on Thursday and are intended to help you study for the exam.</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#15</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#15</guid>
+    </item>
+    
+    <item>
+      <title>Homework 9</title>
+      <description>Homework 9 is now posted.  It is due a week from Thursday.  Also, the exams are graded and I will be handing them back tomorrow.</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#16</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#16</guid>
+    </item>
+
+    <item>
+      <title>Homework 10</title>
+      <description>Homework 10 is now posted.</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#17</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#17</guid>
+    </item>
+
+    <item>
+      <title>Homework 11</title>
+      <description>Homework 11 is now posted.</description>
+      <link>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#18</link>
+      <guid>http://www.cems.uvm.edu/~bfarman/courses/Math-17/index.html#18</guid>
+    </item>
+
+  </channel>  
+</rss>
