@@ -1,0 +1,276 @@
+\documentclass{beamer}
+
+\mode<presentation> {
+  \usetheme{PaloAlto}
+}
+
+%%
+\makeatletter
+\setbeamertemplate{subsubsection in sidebar}{\vspace*{-\baselineskip}}
+\setbeamertemplate{subsubsection in sidebar shaded}{\vspace*{-\baselineskip}}
+\makeatother
+%%
+
+%%
+\setbeamertemplate{theorems}[numbered]
+%%
+
+\definecolor{Garnet}{RGB}{130,0,20}
+\usecolortheme[named=Garnet]{structure}
+
+\logo{\includegraphics[width=1.5cm]{../../sharedImgs/USClogo.png}}
+
+%\setbeamercolor{title}{fg=red!60!black,bg=white!50!black}
+%\usecolortheme{beaver}
+%\usecolortheme{crane}
+\usefonttheme{structuresmallcapsserif}
+\usefonttheme[onlysmall]{structurebold}
+
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage[only,ninrm,elvrm,twlrm,sixrm,egtrm,tenrm]{rawfonts}
+\usepackage{indentfirst}
+\usepackage[noend]{algorithmic}
+\usepackage{algorithm}
+\usepackage{enumerate}
+\usepackage{graphicx,psfrag}
+\usepackage{epsfig}
+%\usepackage[pdflatex]{graphicx}
+%\usepackage{epstopdf}
+\usepackage{ulem}
+\usepackage{animate} %need the animate.sty file
+\usepackage{tikz}
+\usetikzlibrary{fit,shapes,calc}
+\usepackage{pgfplots}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,enumerate,mymath,mathtools,tikz-cd,mathrsfs}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}{Lemma}
+\newtheorem{prop}{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\newtheorem{rmk}{Remark}
+
+\newcommand{\A}{\mathscr{A}}
+\renewcommand{\C}{\mathscr{C}}
+
+\newcommand*{\defeq}{\mathrel{\vcenter{\baselineskip0.5ex \lineskiplimit0pt
+                     \hbox{\scriptsize.}\hbox{\scriptsize.}}}%
+                     =}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+\input epsf
+
+
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[latin1]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+\title % (optional, use only with long paper titles)
+    {Rates of Change and Applications to Economics}
+
+
+\author[Farman]
+{Blake Farman~\inst{1}}
+
+\institute[USC]{
+\inst{1}
+University of South Carolina, Columbia, SC USA}
+%\inst{2}
+%East Carolina University, Greenville, NC USA\\
+%\inst{3}
+%University of Johannesburg, Auckland Park, South Africa}
+
+\date[January 12, 2017]
+{Math 122: Calculus for Business Administration and Social Sciences}
+
+%\subject{Irredundant and Mixed Ramsey Numbers}
+\setbeamercolor{alerted text}{fg=red!60!black}
+\setbeamercolor{block title}{bg=white!50!black,fg=red!60!black}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[pausesections]
+\end{frame}
+
+\section{1.3: Average Rate of Change and Relative Change}
+
+\begin{frame}{Average Rate of Change}
+  \begin{defn}
+    The {\it average rate of change} of a function $f$ on an interval $[a,b]$ is
+    $$\frac{f(b) - f(a)}{b - a} = \frac{f(a) - f(b)}{a - b}.$$
+  \end{defn}
+  \onslide<2->{
+  \begin{rmk}
+    This is just the difference quotient from the last section.
+  \end{rmk}}
+\end{frame}
+
+\begin{frame}{Example}
+  From Columbia, it's about 104 miles to Charleston.
+  \onslide<2->{If you make the drive in two hours, what was your average speed?}\\
+
+  
+  \onslide<3->{Take Columbia to be distance zero, and mark the starting time at $t = 0$.}
+  \onslide<4->{The average speed is:
+    $$\onslide<5->{\frac{104 - 0}{2 - 0}} \onslide<6->{= \frac{104}{2}} \onslide<7->{= 52\ \text{mph}}.$$}
+  \onslide<8->{
+    \begin{rmk}
+      Note that this does not necessarily imply you drove 52 mph the entire time, but rather you averaged 52 mph.
+    \end{rmk}
+    }
+\end{frame}
+
+\begin{frame}{Example}
+  Find the average rate of change of $f(x) = \sqrt{x}$ on $[1,4]$.
+
+  \onslide<2->{
+    $$\frac{f(4) - f(1)}{4 - 1} \onslide<3->{= \frac{\sqrt{4} - \sqrt{1}}{4 - 1}} \onslide<4->{= \frac{2 - 1}{3}} \onslide<5->{= \frac{1}{3}.}$$}
+\end{frame}
+
+\begin{frame}{Relative Change}
+  Given a quantity, $P$, the {\it relative change} of the quantity from $P$ to $P^\prime$ is
+  $$\frac{P^\prime - P}{P}.$$
+\end{frame}
+
+\begin{frame}{Example}
+  If gas costs $\$2.25$ and the price increases by $\$2$, then find the relative change in price.
+  \onslide<2->{
+    $$\frac{4.25 - 2.25}{2.25} \onslide<3->{= \frac{2}{2.25}} \onslide<4->{= \frac{2}{\frac{9}{4}}} \onslide<5->{= \frac{8}{9} = 0.\overline{8}}.$$
+    }
+\end{frame}
+
+\begin{frame}{Example}
+  A pair of jeans costs $75.99$ normally.
+  \onslide<2->{Today they are on sale for $52.99$.}
+  \onslide<3->{What is the relative change in the price?}
+  \onslide<4->{
+    $$\frac{52.99 - 75.99}{75.99} \onslide<5->{= \frac{-23}{75.99}} \onslide<6->{\approx -0.303.}$$
+    }
+  \onslide<7->{Hence the price has been reduced by about $30\%$.}
+\end{frame}
+
+\begin{frame}{Example}
+  The number of sales per week for the jeans above is normally 25.
+  \onslide<2->{During the week the jeans are on sale, the number of weekly sales increases to 45.}
+  \onslide<3->{Find the relative change in weekly sales.}
+  \onslide<4->{
+  $$\frac{45 - 25}{25} \onslide<5->{= \frac{20}{25}} \onslide<6->{= \frac{4}{5}.}$$}
+  \onslide<7->{Hence weekly sales have increased by $80\%$.}
+\end{frame}
+
+\section{1.4: Applications of Functions to Economics}
+
+\begin{frame}{Cost and Revenue}
+  Throughout this course we will denote
+  \begin{itemize}
+    \item<2->
+      the cost of producing $q$ goods by $C(q)$,
+    \item<3->
+      the revenue received from selling $q$ goods by $R(q)$, and
+    \item<4->
+      the profit from selling $q$ goods by $\pi(q)$.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Example}
+  A company makes radios.
+  \onslide<2->{
+  To begin manufacturing radios, they spend $\$24,000$ on equipment and a factory.}
+  \onslide<3->{
+  To manufacture a radio costs $\$7$ in material and labour.
+  }
+  \onslide<4->{
+  To manufacture $q$ radios, the cost is:
+  $$C(q) = 7q + 24000.$$
+  }
+  \begin{itemize}
+  \item<5->
+    The $\$24,000$ expenditue is called a {\it fixed cost}.
+  \item<6->
+    The $\$7$/radio in labour and material is called a {\it variable cost}.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Linear Marginal Cost}
+  \begin{defn}
+    For a linear cost function, the marginal cost is the cost to product one additional unit:
+    $$\frac{C(q + 1) - C(q)}{(q + 1) - q} = C(q + 1) - C(q).$$
+  \end{defn}
+  \onslide<2->{
+  \begin{rmk}
+    This is just the slope of the linear cost function.
+  \end{rmk}}
+\end{frame}
+
+\begin{frame}{Profit}
+  \begin{defn}
+    \begin{itemize}
+    \item<1->
+      Given a revenue and a cost function, the profit function is
+      $$\pi(q) = R(q) - C(q).$$
+    \item<2->
+      The {\it break-even} point is the quantity, $q$, for which
+      $$\pi(q) = 0$$
+      holds.
+    \end{itemize}
+  \end{defn}
+\end{frame}
+
+\begin{frame}{Example}
+  In the example above, assume that radios sell for $15$ each.
+  \onslide<2->{The revenue function is
+    $$R(q) = 15q.$$}
+  \onslide<3->{The profit function is
+    $$\pi(q) = R(q) - C(q) \onslide<4->{ = 15q - (7q + 24000)} \onslide<5->{= 8q - 24000.}$$}
+  \onslide<6->{The break-even point is value of $q$ making
+    $$8q - 24000 = 0$$
+    hold.}
+  \onslide<7->{Therefore the break-even point is
+    $$q = \frac{24000}{8} = 3000.$$}
+\end{frame}
+
+\begin{frame}{Marginal Revenue}
+  \begin{defn}
+    The {\it marginal revenue} for a linear revenue function is the revenue from selling one additional item,
+    $$\frac{R(q + 1) - R(q)}{(q + 1) - q} = R(q + 1) - R(q).$$
+  \end{defn}
+  \onslide<2->{
+      \begin{rmk}
+        This is just the slope of the revenue function.
+      \end{rmk}
+    }
+\end{frame}
+    
+\begin{frame}{Marginal Profit}
+  \begin{defn}
+    The {\it marginal profit} for linear cost and revenue functions is the profit from selling one additional item
+    $$\frac{\pi(q+1) - \pi(q)}{(q + 1) - q} = \pi(q + 1) - \pi(q).$$
+  \end{defn}
+  
+  \onslide<2->{
+    \begin{rmk}
+      This is the slope of the revenue function less the slope of the cost function.
+    \end{rmk}
+  }
+\end{frame}
+
+\end{document}

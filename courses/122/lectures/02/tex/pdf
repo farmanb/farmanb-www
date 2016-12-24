@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+NUM=02
+CLASS=122
+NAME="Lecture-$NUM-$CLASS"
+PDFDIR=../pdf/
+FILE="$NAME.tex"
+
+texi2pdf $FILE
+
+if [ ! -d ../pdf ]; then
+    mkdir ../pdf
+fi
+
+cp $NAME.pdf ../pdf
+
+#rm -fr *.log
+#rm -fr *.aux
+#rm -fr *.bbl
+#rm -fr *.blg
+rm -fr *~

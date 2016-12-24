@@ -1,0 +1,294 @@
+\documentclass{beamer}
+
+\mode<presentation> {
+  \usetheme{PaloAlto}
+}
+
+%%
+\makeatletter
+\setbeamertemplate{subsubsection in sidebar}{\vspace*{-\baselineskip}}
+\setbeamertemplate{subsubsection in sidebar shaded}{\vspace*{-\baselineskip}}
+\makeatother
+%%
+
+%%
+\setbeamertemplate{theorems}[numbered]
+%%
+
+\definecolor{Garnet}{RGB}{130,0,20}
+\usecolortheme[named=Garnet]{structure}
+
+\logo{\includegraphics[width=1.5cm]{../../sharedImgs/USClogo.png}}
+
+%\setbeamercolor{title}{fg=red!60!black,bg=white!50!black}
+%\usecolortheme{beaver}
+%\usecolortheme{crane}
+\usefonttheme{structuresmallcapsserif}
+\usefonttheme[onlysmall]{structurebold}
+
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage[only,ninrm,elvrm,twlrm,sixrm,egtrm,tenrm]{rawfonts}
+\usepackage{indentfirst}
+\usepackage[noend]{algorithmic}
+\usepackage{algorithm}
+\usepackage{enumerate}
+\usepackage{graphicx,psfrag}
+\usepackage{epsfig}
+%\usepackage[pdflatex]{graphicx}
+%\usepackage{epstopdf}
+\usepackage{ulem}
+\usepackage{animate} %need the animate.sty file
+\usepackage{tikz}
+\usetikzlibrary{fit,shapes,calc}
+\usepackage{pgfplots}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,enumerate,mymath,mathtools,tikz-cd,mathrsfs}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}{Lemma}
+\newtheorem{prop}{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\newtheorem{rmk}{Remark}
+
+\newcommand{\A}{\mathscr{A}}
+\renewcommand{\C}{\mathscr{C}}
+
+\newcommand*{\defeq}{\mathrel{\vcenter{\baselineskip0.5ex \lineskiplimit0pt
+                     \hbox{\scriptsize.}\hbox{\scriptsize.}}}%
+                     =}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+\input epsf
+
+
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[latin1]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+\title % (optional, use only with long paper titles)
+    {Exponential Growth/Decay}
+
+\author[Farman]
+{Blake Farman~\inst{1}}
+
+\institute[USC]{
+\inst{1}
+University of South Carolina, Columbia, SC USA}
+%\inst{2}
+%East Carolina University, Greenville, NC USA\\
+%\inst{3}
+%University of Johannesburg, Auckland Park, South Africa}
+
+\date[January 17, 2017]
+{Math 122: Calculus for Business Administration and Social Sciences}
+
+%\subject{Irredundant and Mixed Ramsey Numbers}
+\setbeamercolor{alerted text}{fg=red!60!black}
+\setbeamercolor{block title}{bg=white!50!black,fg=red!60!black}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[pausesections]
+\end{frame}
+
+\section{1.7: Exponential Growth and Decay}
+\subsection{Doubling Time and Half Life}
+\begin{frame}{Definition}
+  \begin{defn}
+    \begin{itemize}
+    \item<1->
+      The {\it doubling time} of an exponentially increasing quantity is the time required for the quantity to double.
+    \item<2->
+      The {\it half-life} of an exponentially decaying quantity is the time required for the quantity to be reduced by a factor of one half.
+    \end{itemize}
+  \end{defn}
+\end{frame}
+
+\begin{frame}{Doubling Time}
+  Every exponentially increasing function, $P(t) = P_0a^t$, has a fixed doubling time, $d$.
+  \onslide<2->{Take $d = \log_a(2)$.}
+  \onslide<3->{Then
+    \begin{eqnarray*}
+      \onslide<3->{P(t + d) &=& P_0a^{t + d}\\}
+      \onslide<4->{&=& P_0a^ta^d\\}
+      \onslide<5->{&=& P_0a^t a^{\log_a(2)}\\}
+      \onslide<6->{&=& 2P_0a^t\\}
+      \onslide<7->{&=& 2P(t)}
+  \end{eqnarray*}}
+\end{frame}
+
+\begin{frame}{Half-Life}
+  Similarly, every exponentially decreasing function, $P(t) = P_0a^t$, has a fixed half-life, $h$.
+  \onslide<2->{Take $$h = \log_a\left(\frac{1}{2}\right) = -\log_a(2).$$}
+  \onslide<3->{Then
+    \begin{eqnarray*}
+      \onslide<3->{P(t + h) &=& P_0a^{t + h}\\}
+      \onslide<4->{&=& P_0a^ta^h\\}
+      \onslide<5->{&=& P_0a^t a^{-\log_a(2)}\\}
+      \onslide<6->{&=& \frac{1}{2}P_0a^t\\}
+      \onslide<7->{&=& \frac{1}{2}P(t)}
+  \end{eqnarray*}}
+\end{frame}
+
+\begin{frame}{Computing Doubling Time/Half-Life}
+  To approximate the value of the doubling time with a calculator:
+  $$d = log_a(2) = \frac{\ln(2)}{\ln(a)}$$
+  and
+  $$h = -\log_a(2) = -\frac{\ln(2)}{\ln(a)}.$$
+\end{frame}
+
+\begin{frame}{Example}
+  Raditiation from an iodine source decays at a continuous hourly rate of $k = -0.004$.
+  \onslide<2->{If the radiation level at a spill is about 2.4 millirems/hour:}
+  \begin{enumerate}[(a)]
+  \item<3->
+    What was the radiation level 24 hours later?
+  \item<4->
+    How long will it take for the radiation levels to decay to the maximum acceptable radiation level of 0.6 millirems/hour set by the EPA?
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Example (Cont.)}
+  \begin{enumerate}[(a)]
+  \item<1->
+    The radiation level 24 hours later is 
+    $$R(24) = 2.4 e^{-0.004\cdot 24} \approx 2.18\ \text{millirems/hour}.$$
+  \item<2->
+    Solve the equation below for $t$:
+    \begin{eqnarray*}
+      \onslide<3->{0.6 &=& 2.4e^{-0.004t}\\}
+      \onslide<4->{\Rightarrow e^{-0.004t} &=& \frac{2.4}{0.6} = \frac{1}{4}\\}
+      \onslide<5->{\Rightarrow -0.004t &=& \ln\left(\frac{1}{4}\right) = -\ln(4)\\}
+      \onslide<6->{\Rightarrow t &=& \frac{1}{0.004}\ln(4) \approx 346.57 hours.\\}
+    \end{eqnarray*}
+    \onslide<7->{Therefore, it will take approximately $346.57/24 = 14.4$ days.}
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  The population of Kenya was about 19.5 million in 1984 and 39 million in 2009.
+  \onslide<2->{Find, assuming exponential growth, a function of $t$ years since 1984 modeling the population.}
+  
+  \onslide<3->{We are given $P_0 = 19.5$ and $P(25) = 39$.}
+  \onslide<4->{If we assume that $P(t) = 19.5e^{kt}$, then
+  \begin{eqnarray*}
+    \onslide<5->{39 &=& 19.5e^{25k}\\}
+    \onslide<6->{\Rightarrow \frac{39}{19.5} &=& 2 = e^{25k}\\}
+    \onslide<7->{\Rightarrow \ln(2) &=& \ln(e^{25k}) = 25k\\}
+    \onslide<8->{\Rightarrow k &=& \frac{ln(2)}{25}} \onslide<9->{\approx 0.028.}
+  \end{eqnarray*}}
+  \onslide<10->{Therefore 
+  $$P(t) \approx 19.5e^{0.28t}.$$}
+\end{frame}
+
+\begin{frame}
+  The release of chlorofluorocarbons (CFCs) used in air conditioners and household aerosols destroys the ozone layer in the upper atmosphere.
+  \onslide<2->{The quantity of ozone, $Q(t)$, decays exponentially at a continuous rate of $0.025\%$ per year.}
+  \onslide<3->{What is the half-life of ozone?\\}
+
+  \onslide<4->{The half life is given by
+  \begin{eqnarray*}
+    \onslide<4->{\log_{e^k}(2) &=& -\frac{\ln(2)}{\ln(e^k)}\\}
+    \onslide<5->{&=& -\frac{ln(2)}{k}\\}
+    \onslide<6->{&=& -\frac{ln(2)}{-\frac{1}{400}}\\}
+    \onslide<7->{&=& 400\ln(2)} \onslide<8->{\approx 277\ \text{years}.}
+  \end{eqnarray*}}
+\end{frame}
+\subsection{Financial Applications}
+\begin{frame}{Compound Interest}
+  Assume a sum of money $P_0$ is deposited in an account paying interest at a rate of $r\%$ yearly, compounded $n$ times per year.
+  \onslide<2->{This means that each compounding period, the account earns interest on the balance at a rate of $r/n$.}\\
+  
+  \onslide<3->{What is the balance of the account after $t$ years?}
+\end{frame}
+
+\begin{frame}{Compounding Interest (Cont.)}
+  Consider the table:
+
+  \begin{center}
+    \begin{tabular}{cc}
+      Compounding Period & Account Balance\\
+      \onslide<2->{$1$ & $P_0(1 + \frac{r}{n})$\\}
+      \onslide<3->{$2$ & $P_0(1 + \frac{r}{n})(1 + \frac{r}{n}) = P_0(1 + \frac{r}{n})^2$\\}
+      \onslide<4->{$3$ & $P_0(1 + \frac{r}{n})^2(1 + \frac{r}{n}) = P_0(1 + \frac{r}{n})^3$\\}
+      \onslide<5->{\vdots & \vdots \\}
+      \onslide<6->{$n$ & $P_0(1 + \frac{r}{n})^n$\\}
+    \end{tabular}
+    \onslide<7->{So at the end of the year, the balance will be $P_0(1 + \frac{r}{n})^n$.}
+    \onslide<8->{Continuing this way, the account balance after $t$ years will be
+      $$P_0(1 + \frac{r}{n})^{nt}.$$}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Doubling Time}
+  Say you invest $P_0$ dollars at a rate of $r\%$ per year, compounded $n$ times.
+  \onslide<2->{What is the doubling time?}
+  
+  
+  \onslide<3->{The function for the account balance is
+    $$P_0\left(1 + \frac{r}{n}\right)^{nt} = P_0\left(\left(1 + \frac{r}{100n}\right)^n\right)^t.$$}
+    \onslide<4->{Therefore the doubling time is
+      $$d = \log_{\left(1 + \frac{r}{100n}\right)^n}(2)\onslide<5->{= \frac{\ln(2)}{\ln\left(\left(1 + \frac{r}{100n}\right)^n\right)}}\onslide<6->{ = \frac{ln(2)}{n\ln\left(1 + \frac{r}{100n}\right)}}.$$}
+\end{frame}
+
+\begin{frame}{Example}
+  Say the interest rate is $2\%$ and interest is compounded yearly.
+  \onslide<2->{The expected doubling time is
+    $$d = \frac{\ln(2)}{\ln(1.02)}\onslide<3->{\approx 35\ \text{years}.}$$}
+  
+  \onslide<4->{
+  \begin{rmk}[``Rule of 70'']
+    When $r\%$ is very small,
+    $$\ln\left(1 + \frac{r}{100}\right) \approx \frac{r}{100}$$
+    and $\ln(2) \approx .7$, so the doubling rate is approximately
+    $$\onslide<5->{d = \frac{\ln(2)}{\ln\left(1 + \frac{r}{100}\right)}} \onslide<6->{ \approx \frac{.7}{r/100}}\onslide<7->{ = \frac{70}{r}.}$$
+  \end{rmk}}
+\end{frame}
+
+\subsection{Continuously Compounding Interest}
+\begin{frame}{Continuously Compounding Interest}
+  The method above is discrete.
+  \onslide<2->{If instead, we wish to compound interest at every instant, we get {\it continuously compounding interest},
+  $$P(t) = P_0e^{rt}$$}
+\end{frame}
+
+\begin{frame}{Example}
+  If $\$10,000$ is invested at $5\%$ per year, compounded continuously, how long will it take to reach $\$15,000$?
+  
+  \onslide<2->{We want to solve the equation below for $t$:}
+  \begin{eqnarray*}
+    \onslide<2->{P(t) &=& 10000e^{t/20} = 15000\\}
+    \onslide<3->{\Rightarrow e^{t/20} &=& \frac{15000}{10000} = \frac{3}{2}\\}
+    \onslide<4->{\Rightarrow t/20 &=& \ln(e^{t/20}) = \ln\left(\frac{3}{2}\right)\\}
+    \onslide<5->{\Rightarrow t &=& 20\ln\left(\frac{3}{2}\right)\\}
+    \onslide<6->{&\approx& 8\ \text{years}.}
+  \end{eqnarray*}
+\end{frame}
+
+\begin{frame}{Doubling Time}
+  Say you invest $P_0$ dollars at a rate of $r\%$ per year compounding continuously.
+  \onslide<2->{The account balance is given by the function
+  $$P_0e^{rt} = P_0 (e^r)^t.$$}
+  \onslide<3->{Hence the doubling time is given by}
+  $$\onslide<3->{\log_{e^{r/100}}(2) = \frac{\ln(2)}{\ln(e^{r/100})}}\onslide<4->{ = \frac{ln(2)}{r/100}}\onslide<5->{ \approx \frac{70}{r}.}$$
+\end{frame}
+\end{document}
