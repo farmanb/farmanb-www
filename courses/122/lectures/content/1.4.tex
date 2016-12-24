@@ -1,0 +1,98 @@
+\documentclass[Lecture.tex]{subfiles}
+\begin{document}
+\section{1.4: Applications of Functions to Economics}
+
+\begin{frame}{Cost and Revenue}
+  Throughout this course we will denote
+  \begin{itemize}
+    \item<2->
+      the cost of producing $q$ goods by $C(q)$,
+    \item<3->
+      the revenue received from selling $q$ goods by $R(q)$, and
+    \item<4->
+      the profit from selling $q$ goods by $\pi(q)$.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Example}
+  A company makes radios.
+  \onslide<2->{
+  To begin manufacturing radios, they spend $\$24,000$ on equipment and a factory.}
+  \onslide<3->{
+  To manufacture a radio costs $\$7$ in material and labour.
+  }
+  \onslide<4->{
+  To manufacture $q$ radios, the cost is:
+  $$C(q) = 7q + 24000.$$
+  }
+  \begin{itemize}
+  \item<5->
+    The $\$24,000$ expenditue is called a {\it fixed cost}.
+  \item<6->
+    The $\$7$/radio in labour and material is called a {\it variable cost}.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Linear Marginal Cost}
+  \begin{defn}
+    For a linear cost function, the marginal cost is the cost to product one additional unit:
+    $$\frac{C(q + 1) - C(q)}{(q + 1) - q} = C(q + 1) - C(q).$$
+  \end{defn}
+  \onslide<2->{
+  \begin{rmk}
+    This is just the slope of the linear cost function.
+  \end{rmk}}
+\end{frame}
+
+\begin{frame}{Profit}
+  \begin{defn}
+    \begin{itemize}
+    \item<1->
+      Given a revenue and a cost function, the profit function is
+      $$\pi(q) = R(q) - C(q).$$
+    \item<2->
+      The {\it break-even} point is the quantity, $q$, for which
+      $$\pi(q) = 0$$
+      holds.
+    \end{itemize}
+  \end{defn}
+\end{frame}
+
+\begin{frame}{Example}
+  In the example above, assume that radios sell for $15$ each.
+  \onslide<2->{The revenue function is
+    $$R(q) = 15q.$$}
+  \onslide<3->{The profit function is
+    $$\pi(q) = R(q) - C(q) \onslide<4->{ = 15q - (7q + 24000)} \onslide<5->{= 8q - 24000.}$$}
+  \onslide<6->{The break-even point is value of $q$ making
+    $$8q - 24000 = 0$$
+    hold.}
+  \onslide<7->{Therefore the break-even point is
+    $$q = \frac{24000}{8} = 3000.$$}
+\end{frame}
+
+\begin{frame}{Marginal Revenue}
+  \begin{defn}
+    The {\it marginal revenue} for a linear revenue function is the revenue from selling one additional item,
+    $$\frac{R(q + 1) - R(q)}{(q + 1) - q} = R(q + 1) - R(q).$$
+  \end{defn}
+  \onslide<2->{
+      \begin{rmk}
+        This is just the slope of the revenue function.
+      \end{rmk}
+    }
+\end{frame}
+    
+\begin{frame}{Marginal Profit}
+  \begin{defn}
+    The {\it marginal profit} for linear cost and revenue functions is the profit from selling one additional item
+    $$\frac{\pi(q+1) - \pi(q)}{(q + 1) - q} = \pi(q + 1) - \pi(q).$$
+  \end{defn}
+  
+  \onslide<2->{
+    \begin{rmk}
+      This is the slope of the revenue function less the slope of the cost function.
+    \end{rmk}
+  }
+\end{frame}
+\end{document}

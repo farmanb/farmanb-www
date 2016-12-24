@@ -1,0 +1,69 @@
+\documentclass[Lecture.tex]{subfiles}
+\begin{document}
+
+\section{1.3: Average Rate of Change and Relative Change}
+
+\begin{frame}{Average Rate of Change}
+  \begin{defn}
+    The {\it average rate of change} of a function $f$ on an interval $[a,b]$ is
+    $$\frac{f(b) - f(a)}{b - a} = \frac{f(a) - f(b)}{a - b}.$$
+  \end{defn}
+  \onslide<2->{
+  \begin{rmk}
+    This is just the difference quotient from the last section.
+  \end{rmk}}
+\end{frame}
+
+\begin{frame}{Example}
+  From Columbia, it's about 104 miles to Charleston.
+  \onslide<2->{If you make the drive in two hours, what was your average speed?}\\
+
+  
+  \onslide<3->{Take Columbia to be distance zero, and mark the starting time at $t = 0$.}
+  \onslide<4->{The average speed is:
+    $$\onslide<5->{\frac{104 - 0}{2 - 0}} \onslide<6->{= \frac{104}{2}} \onslide<7->{= 52\ \text{mph}}.$$}
+  \onslide<8->{
+    \begin{rmk}
+      Note that this does not necessarily imply you drove 52 mph the entire time, but rather you averaged 52 mph.
+    \end{rmk}
+    }
+\end{frame}
+
+\begin{frame}{Example}
+  Find the average rate of change of $f(x) = \sqrt{x}$ on $[1,4]$.
+
+  \onslide<2->{
+    $$\frac{f(4) - f(1)}{4 - 1} \onslide<3->{= \frac{\sqrt{4} - \sqrt{1}}{4 - 1}} \onslide<4->{= \frac{2 - 1}{3}} \onslide<5->{= \frac{1}{3}.}$$}
+\end{frame}
+
+\begin{frame}{Relative Change}
+  Given a quantity, $P$, the {\it relative change} of the quantity from $P$ to $P^\prime$ is
+  $$\frac{P^\prime - P}{P}.$$
+\end{frame}
+
+\begin{frame}{Example}
+  If gas costs $\$2.25$ and the price increases by $\$2$, then find the relative change in price.
+  \onslide<2->{
+    $$\frac{4.25 - 2.25}{2.25} \onslide<3->{= \frac{2}{2.25}} \onslide<4->{= \frac{2}{\frac{9}{4}}} \onslide<5->{= \frac{8}{9} = 0.\overline{8}}.$$
+    }
+\end{frame}
+
+\begin{frame}{Example}
+  A pair of jeans costs $75.99$ normally.
+  \onslide<2->{Today they are on sale for $52.99$.}
+  \onslide<3->{What is the relative change in the price?}
+  \onslide<4->{
+    $$\frac{52.99 - 75.99}{75.99} \onslide<5->{= \frac{-23}{75.99}} \onslide<6->{\approx -0.303.}$$
+    }
+  \onslide<7->{Hence the price has been reduced by about $30\%$.}
+\end{frame}
+
+\begin{frame}{Example}
+  The number of sales per week for the jeans above is normally 25.
+  \onslide<2->{During the week the jeans are on sale, the number of weekly sales increases to 45.}
+  \onslide<3->{Find the relative change in weekly sales.}
+  \onslide<4->{
+  $$\frac{45 - 25}{25} \onslide<5->{= \frac{20}{25}} \onslide<6->{= \frac{4}{5}.}$$}
+  \onslide<7->{Hence weekly sales have increased by $80\%$.}
+\end{frame}
+\end{document}

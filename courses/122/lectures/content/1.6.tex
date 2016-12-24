@@ -1,0 +1,97 @@
+\documentclass[Lecture.tex]{subfiles}
+\begin{document}
+\section{1.6: Logarithms}
+
+\subsection{Inverse Functions}
+
+\begin{frame}{Definition}
+  \begin{defn}
+    A function $f(x)$ has an {\it inverse} if there exists a function $f^{-1}(x)$ such that
+    $$f \circ f^{-1}(x) = x\ \text{and}\ f^{-1} \circ f(x) = x.$$
+  \end{defn}
+  
+  \onslide<2->{
+    \begin{thm}[Horizontal Line Test]
+      If any horizontal line intersects the graph of $f(x)$ in {\bf at most one} point, then $f(x)$ admits a composition inverse.
+    \end{thm}
+  }
+\end{frame}
+
+\subsection{Definition}
+
+\begin{frame}{Definition}
+  First, we note that any exponential function visibly passes the Horizontal Line Test.
+  \onslide<2->{
+  \begin{defn}
+    The {\it logarithm with base a} is the inverse function of the exponential function, $a^x$, and is denoted by
+    $$\log_{a}(x).$$
+  \end{defn}
+  }
+  \onslide<3->{
+    \begin{rmk}
+      \begin{itemize}
+      \item<3->
+        By definition, 
+        $$\log_a(a^x) = x\ \text{and}\ a^{\log_a(x)} = x.$$
+      \item<4->
+        One denotes $\log_e(x)$ by $\ln(x)$.
+      \end{itemize}
+    \end{rmk}
+    }
+\end{frame}
+
+\begin{frame}{Properties of Logarithms}
+\begin{itemize}
+  \item<1->
+    $\log_a(xy) = \log_a(x) + \log_a(y)$
+  \item<2->
+    $\log_a\left(\frac{x}{y}\right) = \log_a(x) - \log_a(y)$
+  \item<3->
+    $\log_a\left(x^r\right) = r\log_a(x)$.
+  \item<4->
+    $\log_a(x) = \frac{\log_b(x)}{\log_b(a)}$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Example}
+  Solve $3^t = 10$ for $t$.
+  \begin{eqnarray*}
+    \onslide<2->{\Rightarrow \ln(3^t) &=& \ln(10)\\}
+    \onslide<3->{\Rightarrow t\ln(3) &=& \ln(10)\\}
+    \onslide<4->{\Rightarrow t &=& \frac{\ln(10)}{\ln(3)} (= \log_3(10))}
+  \end{eqnarray*}
+\end{frame}
+
+\begin{frame}{Example}
+  Solve $12 = 5e^{3t}$ for $t$.
+  \begin{eqnarray*}
+    \onslide<2->{\Rightarrow e^{3t} &=& \frac{12}{5}\\}
+    \onslide<3->{\Rightarrow \ln(e^{3t}) &=& 3t = \ln\left(\frac{12}{5}\right)\\}
+    \onslide<4->{\Rightarrow t &=& \frac{1}{3}\ln\left(\frac{12}{5}\right)}
+  \end{eqnarray*}
+\end{frame}
+
+\subsection{Exponential Functions with Base $e$}
+
+\begin{frame}
+  With the natural logarithm, we can rewrite any exponential function with base $e$ if we so choose.
+  \onslide<2->{Say, $P(t) = P_0a^t$.}
+  \onslide<3->{We let $k = \ln(a)$ so $e^k = a$ and hence 
+    $$P_0e^{kt} = P_0\left(e^k\right)^t \onslide<4->{= P_0a^t} \onslide<5->{ = P(t)}$$}
+  \onslide<6->{We call $k$ the {\it continuous growth/decay rate}}.
+\end{frame}
+
+\begin{frame}{Example}
+  Convert $P(t) = 1000e^{0.05t}$ to the form $P_0a^t$.
+  
+  \onslide<2->{Let $a = e^{0.05}$.}
+  \onslide<3->{Then
+    $$P(t) = 1000e^{0.05t} = 1000(e^{0.05})^t = 1000a^t.$$}
+\end{frame}
+
+\begin{frame}{Example}
+  Convert $P(t) = 500(1.06)^t$ to the form $P_0e^{kt}$.
+  
+  \onslide<2->{$$P(t) = 500(1.06)^t = 500e^{\ln(1.06)t}.$$}
+\end{frame}
+\end{document}

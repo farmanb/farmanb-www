@@ -1,0 +1,67 @@
+\documentclass[Lecture.tex]{subfiles}
+\begin{document}
+\section{4.4: Profit, Cost, and Revenue}
+\subsection{Maximizing Profit}
+
+\begin{frame}{Marginal Profit}
+  \begin{defn}
+    The {\it marginal profit} is
+    $$\pi^\prime(q) = R^\prime(q) - C^\prime(q).$$
+  \end{defn}
+  
+  \onslide<2->{
+    \begin{rmk}
+      Critical points occur whenever marginal cost equal marginal revenue, or one of marginal cost/revenue is undefined.
+    \end{rmk}
+  }
+\end{frame}
+
+\begin{frame}{Example}
+  Find the quantity which maximizes profit for the given revenue and cost functions on $[0,1000]$
+  \begin{eqnarray*}
+    R(q) &=& 5q - 0.003q^2\\
+    C(q) &=& 300 + 1.1q
+  \end{eqnarray*}
+  \onslide<2->{Since 
+    $$\pi(q) = -0.003q^2 + (5 - 1.1)q  - 300$$
+    is a quadratic with negative leading coefficient, the global maximum occurs at}
+  $$\onslide<3->{q = \frac{-(5 - 1.11)}{2(-0.003)}} \onslide<4->{ = 650}$$
+\end{frame}
+
+\subsection{Maximizing Revenue}
+\begin{frame}{Example}
+  \onslide<1->{At a price of $\$80$ for a half day trip, a white water rafting company attracts 300 customers.}
+  \onslide<2->{Every $\$5$ decrease in price attracts an additional 30 customers.}
+  \onslide<3->{What price should the company charge per trip to maximize revenue?\\}
+\vfill  
+  \only<3-7>{
+    \begin{minipage}[t]{\linewidth}
+      Since each $\$5$ decrease in the price, $p$, increases the number of customers, $q$, by 30, we have
+      \begin{eqnarray*}
+        \onslide<3->{q(p)} \onslide<4->{&=& 300 + \frac{(80 - p)}{5}\cdot 30\\}
+        \onslide<5->{&=& 300 + 6(80 - p)\\}
+        \onslide<6->{&=& 300 + 480 - 6p\\}
+        \onslide<7->{&=& -6p + 780.}
+      \end{eqnarray*}
+    \end{minipage}
+  }
+  \only<8-14>{
+    \begin{minipage}[t]{\linewidth}
+      The revenue is therefore
+      $$\onslide<8->{R(p) = }\onslide<9->{p(-6p + 780)} \onslide<10->{= -6p^2 + 780p.}$$
+      \onslide<11->{
+        This is a downward facing parabola, so the maximum occurs at the vertex
+        $$\onslide<12->{\frac{-780}{2(-6)}} \onslide<13->{= \frac{780}{12}} \onslide<14->{ = 65}$$
+      }
+    \end{minipage}
+  }
+  \only<15->{
+    \begin{minipage}[t]{\linewidth}
+      \onslide<15->{
+        The maximum revenue is
+        $$\onslide<16->{R(65)} \onslide<17->{= \$25,350.}$$
+      }
+    \end{minipage}
+  }
+\end{frame}
+\end{document}

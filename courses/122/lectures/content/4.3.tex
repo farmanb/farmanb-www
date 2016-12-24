@@ -1,0 +1,40 @@
+\documentclass[Lecture.tex]{subfiles}
+\begin{document}
+\section{4.3: Global Maxima and Minima}
+
+\begin{frame}{Global Extrema}
+  \begin{defn}
+    For any function, $f$, we say 
+    \begin{itemize}
+    \item<2->
+      $f$ has a {\it global minimum} at $p$ if $f(p) \leq f(x)$ for all $x$ in the domain of $f$.
+    \item<3->
+      $f$ has a {\it global maximum} at $p$ if $f(x) \leq f(p)$ for all $x$ in the domain of $f$.
+    \end{itemize}
+  \end{defn}
+
+  \onslide<4->{
+    \begin{thm}
+      If $f$ is a continuous function defined on a closed interval, $[a,b]$, then $f$ has a global minimum and a global maximum on $[a,b]$.
+    \end{thm}
+  }
+\end{frame}
+
+\begin{frame}{Example}
+  Find the global extrema of $f(x) = x^3 - 9x^2 - 48x + 52$ on $[-5,14]$.
+  \begin{eqnarray*}
+    \onslide<2->{f^\prime(x) &=& 3x^2 - 18x - 48}
+    \onslide<3->{= 3(x^2 - 6x - 16)\\}
+    \onslide<4->{&=& 3(x + 2)(x - 8)\\}
+    \onslide<5->{f^{\prime\prime}(x) &=& 6x - 18 = 6(x - 3)\\}
+    \onslide<6->{\Rightarrow f^{\prime\prime}(-2) &=& 6(-2 - 3) < 0\\}
+    \onslide<7->{\Rightarrow f^{\prime\prime}(8) &=& 6(8 - 3) > 0.\\}
+    \onslide<8->{f(-5) &=& -58\\}
+    \onslide<9->{f(14) &=& 360\\}
+    \onslide<10->{f(-2) &=& 104\\}
+    \onslide<11->{f(8) &=& -396.}
+  \end{eqnarray*}
+  \onslide<12->{Maximum: (14,360).}\\
+  \onslide<13->{Minimum: (8,-396).}
+\end{frame}
+\end{document}

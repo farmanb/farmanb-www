@@ -1,0 +1,74 @@
+\documentclass[Lecture.tex]{subfiles}
+\begin{document}
+\section{3.3: The Chain Rule}
+\begin{frame}{The Chain Rule}
+  Let $f$ and $g$ be differentiable functions such that $f\circ g(x)$ is well-defined.
+  \onslide<2->{The derivative of the composition is given by
+    $$(f\circ g)^\prime(x) = f^\prime \circ g(x) \cdot g^\prime(x).$$
+}
+\end{frame}
+
+\begin{frame}{The Derivative of Arbitrary Exponentials}
+  Let $P(t) = P_0a^t$.\\
+  \onslide<2->{
+    Let $f(t) = P_0e^t$ and let $g(t) = \ln(a)t$ so
+    $$(f \circ g)(t) \onslide<3->{= f(\ln(a)t)} \onslide<4->{= P_0e^{\ln(a)t}} \onslide<5->{= P_0(e^{\ln(a)})^t}\onslide<6->{ = P_0a^t}\onslide<7->{ = P(t).}$$
+  }
+  \onslide<8->{
+    Hence 
+    \begin{eqnarray*}
+      \onslide<8->{P^\prime(t) &=& f^\prime \circ g(t) \cdot g^\prime(t)\\}
+      \onslide<9->{&=& P_0e^{\ln(a)t} \cdot \ln(a)\\}
+      \onslide<10->{&=& P_0a^t \cdot \ln(a)\\}
+      \onslide<11->{&=& \ln(a)P(t).}
+    \end{eqnarray*}
+  }
+\end{frame}
+
+\begin{frame}{Example}
+  Differentiate $(x + 5)^2$.
+  
+  \begin{eqnarray*}
+    \onslide<2->{\ddx(x + 5)^2 &=& 2(x + 5)^1\cdot\ddx(x + 5)\\}
+    \onslide<3->{&=&2(x + 5)(1)\\}
+    \onslide<4->{&=& 2(x + 5)\\}
+    \onslide<5->{&=& 2x + 10.}
+  \end{eqnarray*}
+\end{frame}
+
+\begin{frame}{Example}
+  Find the derivative of $e^{3x}$.
+  
+  \begin{eqnarray*}
+    \onslide<2->{\ddx{e^{3x}} &=& e^{3x}\cdot\ddx(3x)\\}
+    \onslide<3->{&=& e^{3x} \cdot 3\\}
+    \onslide<4->{&=& 3e^{3x}.}
+  \end{eqnarray*}
+\end{frame}
+
+\begin{frame}{Example}
+  Differentiate $\ln\left(2t^2 + 3\right)^2$
+
+  \begin{eqnarray*}
+    \onslide<2->{\ddx\left(\ln\left(2t^2 + 3\right)^2\right) &=& 2\ln\left(2t^2 + 3\right)^1\cdot \ddx \ln\left(2t^2 + 3\right)\\}
+    \onslide<3->{&=& 2\ln\left(2t^2 + 3\right)\cdot \frac{\ddx\left(2t^2 + 3\right)}{2t^2 + 3}}\\
+    \onslide<4->{&=& 2\ln\left(2t^2 + 3\right) \cdot \frac{4t}{2t^2 + 3}\\}
+    \onslide<5->{&=& \frac{8t\ln\left(2t^2 + 3\right)}{2t^2 + 3}}
+  \end{eqnarray*}
+\end{frame}
+
+\begin{frame}{Example}
+  \begin{itemize}
+    \item<1->
+      The amount of gas, $G$, in gallons, consumed by a car depends on the distance, $s$, traveled in miles, which in turn depends on the time traveled, $t$.
+    \item<2->
+      If the car consumes 0.05 gallons for each mile traveled and the car is traveling 30 mph, then how fast is the gas being consumed?
+    \item<3->
+      \begin{eqnarray*}
+        \onslide<3->{\frac{\operatorname{d}}{\operatorname{dt}}(G \circ s(t))} \onslide<4->{&=& G^\prime \circ s(t) \cdot s^\prime(t)\\}
+        \onslide<5->{&=& 0.05\frac{\text{gal}}{\text{mile}} \cdot 30 \frac{\text{miles}}{\text{hour}}\\}
+        \onslide<6->{&=& 1.5 \frac{\text{gal}}{\text{hour}}}.
+      \end{eqnarray*}
+  \end{itemize}
+\end{frame}
+\end{document}

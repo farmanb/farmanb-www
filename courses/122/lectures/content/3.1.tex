@@ -1,0 +1,95 @@
+\documentclass[Lecture.tex]{subfiles}
+\begin{document}
+\section{3.1: Derivatives of Polynomials}
+\subsection{Constants}
+\begin{frame}{Derivative of Constants}
+  \begin{itemize}
+  \item<1->
+    Let $f(x) = a$ for $a \in \R$.
+  \item<2->
+    The difference quotient for any $x_0, x_1$ is
+    $$\onslide<2->{\frac{f(x_0) - f(x_1)}{x_0 - x_1}}\onslide<3->{= \frac{a - a }{x_0 - x_1}}\onslide<4->{ = 0.}$$
+  \item<5->
+    Therefore $f^\prime(x) = 0$.
+  \end{itemize}
+\end{frame}
+
+\subsection{Linearity}
+\begin{frame}{The Derivative is a Linear Operator}
+  Let $f$ and $g$ be differentiable functions, and let $a \in \R$.
+  \begin{itemize}
+  \item<2->
+    $$\frac{\operatorname{d}}{\operatorname{dx}}\left(f(x) \pm g(x)\right) \onslide<3->{= f^\prime(x) \pm g^\prime(x)}$$
+  \item<4->
+    $$\frac{\operatorname{d}}{\operatorname{dx}}\left(af(x)\right) \onslide<5->{= af^\prime(x)}.$$
+  \end{itemize}
+\end{frame}
+
+\subsection{Power Rule}
+
+\begin{frame}{Derivative of a Power Functions}
+  The derivative of $x^n$ for $n \in \R$ is 
+  $$\ddx\left(x^n\right) = nx^{n-1}.$$
+
+  \onslide<2->{
+    \begin{rmk}
+      The derivative of a linear function is
+      $$\ddx\left(mx + b\right) = m\ddx(x) + \ddx(b) = m$$
+    \end{rmk}
+  }
+\end{frame}
+
+\begin{frame}{Derivative of Polynomials}
+  Consider a degree $n$ polynomial,
+  $$p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots + a_2x^2 + a_1x + a_0.$$
+  \onslide<2->{The derivative is
+    \begin{eqnarray*}
+      p^\prime(x) &=& \ddx(a_nx^n + a_{n-1}x^{n-1} + \cdots + a_2x^2 + a_1x + a_0) \\
+      \onslide<2->{&=& a_n\ddx(x^n) + a_{n-1}\ddx(x^{n-1}) + \cdots\\
+        &+& a_2\ddx(x^2) + a_1\ddx(x)\\}
+      \onslide<3->{&=& na_nx^{n-1} + (n-1)a_{n-1}x^{n-2} + \cdots + 2a_2x + a_1.}
+    \end{eqnarray*}
+  }
+\end{frame}
+
+\begin{frame}{Example}
+  Differentiate the following
+  \begin{multicols}{2}
+    \begin{enumerate}
+    \item 
+      $A(t) = 3t^5$
+    \item
+      $r(p) = p^5 + p^3$
+    \item
+      $f(x) = 5x^2 - 7x^3$
+    \item
+      $g(t) = t^2/4 + 3$
+    \end{enumerate}
+  \end{multicols}
+  
+  \begin{multicols}{2}
+    \begin{enumerate}
+    \item<2->
+      $A^\prime(t) = 15t^2$.
+    \item<3->
+      $r^\prime(p) = 5p^4 + 3p^2$.
+    \item<4->
+      $f^\prime(x) = 10x - 21x^2$.
+    \item<5->
+      $g^\prime(t) = t/2$.
+    \end{enumerate}
+  \end{multicols}
+\end{frame}
+
+\begin{frame}{Example}
+  Find the derivative of
+  $$f(x) = x^3 - 2x^2 - 5x + 7.$$
+  
+  \begin{eqnarray*}
+    \onslide<2->{f^\prime(x) &=& \ddx(x^3 - 2x^2 - 5x + 7)\\}
+    \onslide<3->{&=& \ddx(x^3) - \ddx(2x^2) - \ddx(5x) + \ddx(7)\\}
+    \onslide<4->{&=& \ddx(x^3) - 2\ddx(x^2) - 5\ddx(x) + 0\\}
+    \onslide<5->{&=& 3x^2 - 4x - 5.}
+  \end{eqnarray*}
+\end{frame}
+\end{document}
