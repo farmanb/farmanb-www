@@ -5,7 +5,7 @@
 \subsection{Constant Functions}
 \begin{frame}{Constant Functions}
   \only<1-5>{Suppose a car is traveling at 60 miles per hour for 2 hours.
-  \onslide<2->{How far did the car go?}\\}
+    \onslide<2->{How far did the car go?}\\}
   \vfill
   \begin{minipage}[t]{\linewidth}
     \only<3-5>{
@@ -15,7 +15,7 @@
     \only<6-7>{
       Geometrically, this is the area under the constant curve $y(t) = 60$ between $t = 0$ and $t = 2$:
       \onslide<7>{\begin{center}
-        \includegraphics[scale=0.25]{constantVelocity}
+          \includegraphics[scale=0.25]{constantVelocity}
       \end{center}}
     }
     \only<8>{
@@ -28,7 +28,7 @@
 \subsection{Linear Functions}
 \begin{frame}{Linear Functions}
   \only<1-3>{According to Car and Driver, a 2006 Bugatti Veyron is capable of an acceleration of $11.59 \operatorname{m}/\operatorname{s}^2$.
-  Assume the car starts at rest and accelerates at this constant rate.\\}
+    Assume the car starts at rest and accelerates at this constant rate.\\}
 
   \vfill
   
@@ -52,12 +52,12 @@
     }
     \only<6->{
       Therefore the position at time $t$ is:
-        \begin{eqnarray*}
-          \onslide<7->{s(t) &=&} \onslide<8->{\frac{1}{2}v(t)\cdot t\\} 
-          \onslide<9->{ &=& \frac{1}{2}(11.59 \cdot t)\cdot t\\}
-          \onslide<10->{ &=& \frac{11.59}{2}t^2.}
-        \end{eqnarray*}
-      }
+      \begin{eqnarray*}
+        \onslide<7->{s(t) &=&} \onslide<8->{\frac{1}{2}v(t)\cdot t\\} 
+        \onslide<9->{ &=& \frac{1}{2}(11.59 \cdot t)\cdot t\\}
+        \onslide<10->{ &=& \frac{11.59}{2}t^2.}
+      \end{eqnarray*}
+    }
   \end{minipage}
 \end{frame}
 
@@ -80,7 +80,7 @@
       \onslide<4->{This is clearly not linear:}
       \onslide<5->{
         $$\onslide<5->{\frac{30 - 20}{2 - 0} =} \onslide<6->{5}\onslide<7->{\ \text{and}\ }\onslide<8->{\frac{50-48}{10-8}}\onslide<9->{ = 1.}$$
-        }
+      }
     }
     \only<10-12>{
       We can fit a curve to these points:
@@ -103,32 +103,32 @@
     }
     \only<17-22>{
       \begin{center}
-          \includegraphics[scale=0.2]{nonlinearLeftSum}
-        \end{center}
+        \includegraphics[scale=0.2]{nonlinearLeftSum}
+      \end{center}
       
       \begin{itemize}
-        \item<17->
-          Each rectangle has width 2.
-        \item<18->
-          The height of each rectangle is the height of the left endpoint.
-        \item<19->
-          Our area estimate is:
-          \begin{eqnarray*}
-            \onslide<20->{2(20 + 30 + 38 + 44 + 48) &=&}
-            \onslide<21->{2(180)\\}
-            \onslide<22->{&=& 360\ \text{feet}.}
-          \end{eqnarray*}
+      \item<17->
+        Each rectangle has width 2.
+      \item<18->
+        The height of each rectangle is the height of the left endpoint.
+      \item<19->
+        Our area estimate is:
+        \begin{eqnarray*}
+          \onslide<20->{2(20 + 30 + 38 + 44 + 48) &=&}
+          \onslide<21->{2(180)\\}
+          \onslide<22->{&=& 360\ \text{feet}.}
+        \end{eqnarray*}
       \end{itemize}
     }
     \only<23-25>{
       We could also assume the velocity is the velocity at the right endpoint:
       \onslide<24->{
-      \begin{center}
-        \includegraphics[scale=0.3]{nonlinearRightSum}
-      \end{center}
+        \begin{center}
+          \includegraphics[scale=0.3]{nonlinearRightSum}
+        \end{center}
       }
       \onslide<25->{This is an overestimate of the area.}
-      }
+    }
     \only<26-31>{
       \begin{center}
         \includegraphics[scale=0.2]{nonlinearRightSum}
@@ -150,20 +150,155 @@
     \only<31->{
       This tells us:
       \begin{itemize}
-        \item<32->
-          The distance traveled is {\bf at least} 360 feet.
-        \item<33->
-          The distance traveled is {\bf at most} 420 feet.
-        \item<34->
-          The distance traveled must be somewhere between these two.
-        \item<35->
-          The average of these estimates is 
-          $$\frac{420 + 360}{2} = 390$$
-          feet, which gives a better estimate.
+      \item<32->
+        The distance traveled is {\bf at least} 360 feet.
+      \item<33->
+        The distance traveled is {\bf at most} 420 feet.
+      \item<34->
+        The distance traveled must be somewhere between these two.
+      \item<35->
+        The average of these estimates is 
+        $$\frac{420 + 360}{2} = 390$$
+        feet, which gives a better estimate.
       \end{itemize}
       \onslide<36->{Can we do better?}
       \onslide<37->{If so, how?}
     }
   \end{minipage}
 \end{frame}
+
+\subsection{Estimates}
+\begin{frame}
+  We'll use the old linear velocity example, $v(t) = 11.59t$, to analyse these methods:
+  \onslide<2->{
+    \begin{center}
+      \includegraphics[scale=0.3]{linearVelocity.png}
+    \end{center}
+  }
+\end{frame}
+
+\begin{frame}{Right Estimate}
+  Say we use exactly one sample point, $t = 10$.
+  \onslide<2->{We know the area under the curve is given by:
+    \onslide<3->{$$\frac{1}{2}v(t)\cdot t.$$}
+  }
+  \onslide<4->{
+    Our estimate is quite bad:\\
+    \begin{minipage}{.48\linewidth}
+      \onslide<5->{
+        \begin{center}
+          \includegraphics[scale=0.25]{rightEst1Pt}
+      \end{center}}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.48\linewidth}
+      \begin{itemize}
+      \item<6->
+        Red is the error.
+      \item<7->
+        Grey is the area.
+      \item<8->
+        The error is equal to the actual area!
+      \end{itemize}
+    \end{minipage}
+  }
+\end{frame}
+
+\begin{frame}{Two Equidistant Sample Points}
+  If we try two equidistant sample points we get:\\
+  \vfill
+  \begin{minipage}{0.48\linewidth}
+    \onslide<2->{
+      \begin{center}
+        \includegraphics[scale=0.25]{rightEst2Pts}
+      \end{center}
+    }
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.48\linewidth}
+    \begin{itemize}
+    \item<3->
+      Visibly, this is a better estimate.
+    \item<4->
+      The error is the area of the two red triangles.
+    \item<5->
+      Both have base length $\frac{t}{2}$; here $t = 10$.
+    \item<6->
+      The height of the left triangle is $v\left(\frac{t}{2}\right)$.
+    \item<7->
+      The height of the right triangle is $v(t) - v\left(\frac{t}{2}\right)$.
+    \end{itemize}
+  \end{minipage}
+\end{frame}
+
+\begin{frame}{Two Equidistant Sample Points (Cont.)}
+  So, the total error is:
+  \onslide<2->{
+    \begin{eqnarray*}
+      \onslide<2->{\frac{1}{2}\left(v(t) - v\left(\frac{t}{2}\right)\right)\frac{t}{2} &+&}
+      \onslide<3->{\frac{1}{2}v\left(\frac{t}{2}\right)\frac{t}{2}\\}
+      \onslide<4->{&=&\frac{1}{2}\left(v(t) - v\left(\frac{t}{2}\right) + v\left(\frac{t}{2}\right)\right)\frac{t}{2}\\}
+      \onslide<5->{&=& \frac{1}{2}\left(\frac{1}{2}v(t)\cdot t\right).}
+    \end{eqnarray*}
+  }
+  \onslide<6->{By adding one more sample point, we've reduced the error by a factor of two!}
+\end{frame}
+
+\begin{frame}{Three Equidistant Sample Points (Cont.)}
+  If we try three equidistant sample points we get:\\
+  \vfill
+  \begin{minipage}{0.48\linewidth}
+    \onslide<2->{
+      \begin{center}
+        \includegraphics[scale=0.25]{rightEst3Pts}
+      \end{center}
+    }
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.48\linewidth}
+    \begin{itemize}
+    \item<3->
+      Visibly, this is an even better estimate.
+    \item<4->
+      All three red triangles have base length $\frac{t}{3}$.
+    \item<5->
+      The height of the left triangle is $v\left(\frac{t}{3}\right)$.
+    \item<6->
+      The height of the middle triangle is $v\left(\frac{2t}{3}\right) - v\left(\frac{t}{3}\right)$.
+    \item<7->
+      The height of the right triangle is $v(t) - v\left(\frac{2t}{3}\right)$.
+    \end{itemize}
+  \end{minipage}
+\end{frame}
+
+\begin{frame}{Three Equidistant Sample Points (Cont.)}
+  So, the total error is:
+  \onslide<2->{
+    \begin{eqnarray*}
+      \onslide<2->{\frac{1}{2}\left(v(t) - v\left(\frac{2t}{3}\right)\right)\frac{t}{3} &+&}
+      \onslide<3->{\frac{1}{2}\left(v\left(\frac{2t}{3}\right) - v\left(\frac{t}{3}\right)\right)\frac{t}{2} +\\}
+      \onslide<4->{\frac{1}{2}v\left(\frac{t}{3}\right)\frac{t}{3}\\}
+      \onslide<5->{&=&
+      \frac{1}{2}
+      \left(
+      v(t) - v\left(\frac{2t}{3}\right) + 
+      v\left(\frac{2t}{3}\right) \right.\\
+      &-& \left.
+      v\left(\frac{t}{3}\right) + 
+      v\left(\frac{t}{3}\right)
+      \right)
+      \frac{t}{3}\\}
+      \onslide<6->{&=& \frac{1}{3}\left(\frac{1}{2}v(t)\cdot t\right).}
+    \end{eqnarray*}
+  }
+  \onslide<7->{By using three sample points, we've reduced the initial error by a factor of three!}
+\end{frame}
+%\subsection{Animations}
+%\begin{frame}{Left Sum}
+%  \animategraphics[loop,controls,scale=0.3]{12}{leftEstimate/leftEstimate-}{0}{99}
+%\end{frame}
+
+%\begin{frame}{Right Sum}
+%  \animategraphics[loop,controls,scale=0.3]{12}{rightEstimate/rightEstimate-}{0}{99}
+%\end{frame}
 \end{document}
