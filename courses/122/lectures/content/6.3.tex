@@ -1,0 +1,74 @@
+\documentclass[Lecture.tex]{subfiles}
+\begin{document}
+\section{6.3: Using the Fundamental Theorem to Compute Definite Integrals}
+
+\begin{frame}{Example}
+  Compute
+  $$\int_1^3 2x\dx{x}.$$
+
+  \begin{eqnarray*}
+    \onslide<2->{\int_1^3 2x\dx{x} &=&}
+    \onslide<3->{2 \int_1^3 x\dx{x}\\}
+    \onslide<4->{&=&2 \left[\frac{1}{2}x^2\right]_1^3\\}
+    \onslide<5->{&=& x^2\Big|_1^3\\}
+    \onslide<6->{&=& 3^2 - 1^2\\}
+    \onslide<7->{&=& 9 - 1\\}
+    \onslide<8->{&=& 8.}
+  \end{eqnarray*}
+\end{frame}
+
+\begin{frame}{Example}
+  Compute
+  $$\int_0^2 6x^2\dx{x}.$$
+
+  \begin{eqnarray*}
+    \onslide<2->{\int_0^2 6x^2\dx{x} &=&}
+    \onslide<3->{6 \int_0^2 x^2\dx{x}\\}
+    \onslide<4->{&=& \frac{6}{3} x^3\Big|_0^2\\}
+    \onslide<5->{&=& 2\left(2^3 - 0^3\right)\\}
+    \onslide<6->{&=& 2(8)\\}
+    \onslide<7->{&=& 16.}
+  \end{eqnarray*}
+\end{frame}
+
+\begin{frame}{Example}
+  Compute
+  $$\int_0^2 t^3\dx{t}.$$
+
+  \begin{eqnarray*}
+    \onslide<2->{\int_0^2 t^3\dx{t} &=&}
+    \onslide<3->{\frac{1}{4}t^4\Big|_0^2\\}
+    \onslide<4->{&=& \frac{1}{4}(16 - 0)\\}
+    \onslide<5->{&=& 4.}
+  \end{eqnarray*}
+\end{frame}
+
+\begin{frame}{Example}
+  Compute
+  $$\int_1^2 8x + 5\dx{x}.$$
+
+  \begin{eqnarray*}
+    \onslide<2->{\int_1^2 8x + 5\dx{x} &=&}
+    \onslide<3->{8\int_1^2 x \dx{x} + 5\int_1^2\dx{x}\\}
+    \onslide<4->{&=&\frac{8}{2}x^2\Big|_1^2 + 5x\Big|_1^2\\}
+    \onslide<5->{&=& 4(4 - 1) + 5(2 - 1)\\}
+    \onslide<6->{&=& 12 + 5\\}
+    \onslide<7->{&=& 17.}
+  \end{eqnarray*}
+\end{frame}
+
+\begin{frame}{Example}
+  Compute
+  $$\int_0^1 8e^{2t}\dx{t}.$$
+
+  \begin{eqnarray*}
+    \onslide<2->{\int_0^1 8e^{2t}\dx{t} &=&}
+    \onslide<3->{8\int_0^1 e^{2t}\dx{t}\\}
+    \onslide<4->{&=&\frac{8}{2}e^{2t}\Big|_0^1\\}
+    \onslide<5->{&=&4(e^2 - e^0)\\}
+    \onslide<6->{&=&4(e^2 - 1).}
+  \end{eqnarray*}
+\end{frame}
+
+
+\end{document}

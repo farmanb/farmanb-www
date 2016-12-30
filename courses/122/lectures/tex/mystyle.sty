@@ -23,10 +23,11 @@
 \usetikzlibrary{fit,shapes,calc,positioning}
 \usepackage{pgfplots}
 \usepackage{amsmath,amsthm,amssymb,amsfonts,enumerate,mymath,mathtools,tikz-cd,mathrsfs}
-
+\usepackage{csquotes}
 \newcommand{\A}{\mathscr{A}}
 \renewcommand{\C}{\mathscr{C}}
-\newcommand{\ddx}{\frac{\operatorname{d}}{\operatorname{dx}}}
+\newcommand{\ddx}[1]{\frac{\operatorname{d}}{\operatorname{d}\!#1}}
+\newcommand{\dx}[1]{\!\!\;\operatorname{d}\!#1}
 
 \usepackage[english]{babel}
 % or whatever

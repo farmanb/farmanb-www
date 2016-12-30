@@ -1,0 +1,168 @@
+\documentclass[Lecture.tex]{subfiles}
+\begin{document}
+
+\section{6.6: Integration by Substitution}
+
+\begin{frame}{Example}
+  To compute
+  $$\int 2xe^{x^2}\dx{x}$$
+  we must find an antiderivative.
+  \onslide<2->{
+    We note that $\ddx{x}x^2 = 2x$.
+  }
+  \onslide<3->{If we let $u = x^2$, then
+    $$2xe^{x^2} = 
+    \onslide<4->{e^{x^2} \cdot 2x }
+    \onslide<5->{= e^u \cdot \frac{\dx{u}}{\dx{x}}.}$$
+    }
+  \onslide<6->{
+    This looks exactly like the result of applying the Chain Rule to the composition $e^{u(x)}$!
+  }
+  \onslide<7->{
+    This tells us that
+    $$\int 2xe^{x^2}\dx{x} = e^{x^2} + c.$$
+  }
+  \onslide<8->{
+    The method of Integration by Substitution is intended to integrate a product of functions that appears to have come from an application of the chain rule.
+    }
+\end{frame}
+
+\begin{frame}{The Method}
+  \begin{enumerate}
+  \item<1->
+    Identify a piece of the integrand that looks like it could be the derivative of another piece of the integrand, and we let $u$ be that function.
+    \onslide<2->{
+      Here, $u = 2x$.
+    }
+  \item<3->
+    We formally treat $\dx{x}$ and $\dx{u}$ like variables to change variables from $x$ to $u$.
+    \onslide<4->{
+      Here, we multiply both sides of $2xe^{x^2} = e^u \frac{\dx{u}}{\dx{x}}$ by $\dx{x}$ to obtain
+      $$2xe^{x^2}\dx{x} = e^u\dx{u}$$
+    }
+  \item<5->
+    Finally, since these expressions are equal, we can evaluate the simpler integral.
+    \onslide<6->{
+      In this example,
+      \begin{eqnarray*}
+        \onslide<7->{\int \alert<8>{2x}e^{x^2}\alert<8>{\dx{x}} &=&}
+        \onslide<8->{\int e^u \alert<8>{\dx{u}}\\}
+        \onslide<9->{&=& e^u + c\\}
+        \onslide<10->{&=& e^{x^2} + c.}
+      \end{eqnarray*}    
+      }
+  \end{enumerate}
+\end{frame}
+
+\subsection{Examples}
+\begin{frame}{Example}
+  Compute
+  $$\int(x^2 + 1)^5 \cdot 2x\dx{x}.$$
+  \begin{enumerate}
+    \item<1->
+      We note that $2x = \ddx{x}(x^2 + 1)$, so we let $u = x^2 + 1$.
+    \item<2->
+      We have
+      $$\onslide<3->{\frac{\dx{u}}{\dx{x}} =}
+      \onslide<4->{2x\ }
+      \onslide<5->{\Rightarrow\ \dx{u} = 2x\dx{x}.}$$
+      %\begin{eqnarray*}
+      %  \onslide<3->{\frac{\dx{u}}{\dx{x}} &=&}
+      %  \onslide<4->{2x\\}
+      %  \onslide<5->{\Rightarrow \dx{u} &=& 2x\dx{x}.}
+      %\end{eqnarray*}
+    \item<6->
+      Compute the simplified integral:
+      \begin{eqnarray*}
+        \onslide<7->{\int (x^2 + 1)^5 \alert<8>{2x\dx{x}} &=&}
+        \onslide<8->{\int u^5 \alert<8>{\dx{u}}\\}
+        \onslide<9->{&=& \frac{1}{6}u^6 + c\\}
+        \onslide<10->{&=& \frac{1}{6}(x^2 + 1)^6 + c.}
+      \end{eqnarray*}
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Example}
+  Compute
+  $$\int \frac{2x}{x^2 + 4}\dx{x}.$$
+  
+  \onslide<2->{
+    Let $u = x^2 + 4$ so
+    }
+  $$\onslide<3->{\frac{\dx{u}}{\dx{x}} =}
+  \onslide<4->{2x}
+  \onslide<5->{\Rightarrow\ \dx{u} =}
+  \onslide<6->{2x\dx{x}.}$$
+  \onslide<7->{Therefore}
+  \begin{eqnarray*}
+    \onslide<7->{\int \frac{\alert<8>{2x}}{x^2 + 4}\alert<8>{\dx{x}} &=&}
+    \onslide<8->{\int \frac{1}{u}\alert<8>{\dx{u}}\\}
+    \onslide<9->{&=& \ln\abs{u} + c\\}
+    \onslide<10->{&=& \ln\abs{x^2 + 4} + c\\}
+    \onslide<11->{&=& \ln(x^2 + 4) + c.}
+  \end{eqnarray*}
+\end{frame}
+
+\begin{frame}{Example}
+  Compute
+  $$\int te^{t^2 + 1}\dx{t}.$$
+  
+  \onslide<2->{
+    Let $u = t^2 + 1$ so $\dx{u} = 2t\dx{t}$.
+  }
+  \onslide<3->{
+    Since we want to replace $t\dx{t}$, we divide both sides by 2 to get
+  $\dx{u}/2 = t\dx{t}.$
+  }
+  \onslide<4->{Therefore}
+  \begin{eqnarray*}
+    \onslide<5->{\int \alert<6>{t}e^{t^2 + 1}\alert<6>{\dx{t}} &=&}
+    \onslide<6->{\int e^u \alert<6>{\frac{\dx{u}}{2}}\\}
+    \onslide<7->{&=& \frac{1}{2} \int e^u\dx{u}\\}
+    \onslide<8->{&=& \frac{1}{2}e^u + c\\}
+    \onslide<9->{&=& \frac{1}{2}e^{t^2 + 1} + c.}
+  \end{eqnarray*}
+\end{frame}
+
+\begin{frame}{Example}
+  Compute 
+  $$\int x^3\sqrt{x^4 + 5}\dx{x}.$$
+  
+  \onslide<2->{
+    Let $u = x^4 + 5$ so $\dx{u} = 4^3x\dx{x}$.
+  }
+  \onslide<3->{
+    Hence $\dx{u}/4 = x^3\dx{x}$.
+  }
+  \onslide<4->{Therefore}
+  \begin{eqnarray*}
+    \onslide<5->{\int \alert<6>{x^3}\sqrt{x^4 + 5}\alert<6>{\dx{x}} &=&}
+    \onslide<6->{\int \sqrt{u}\alert<6>{\frac{\dx{u}}{4}}\\}
+    \onslide<7->{&=& \frac{1}{4} \int u^{\frac{1}{2}} \dx{u}\\}
+    \onslide<8->{&=& \frac{1}{4} \left(\frac{2}{3} u^{\frac{3}{2}}\right) + c\\}
+    \onslide<9->{&=& \frac{1}{6} (x^4 + 5)^{\frac{2}{3}} + c.}
+  \end{eqnarray*}
+\end{frame}
+
+\begin{frame}{Example}
+  Compute
+  $$\int \frac{t^2}{1 + t^3}\dx{t}.$$
+
+  \onslide<2->{
+    Let $u = 1 + t^3$ so $\dx{u} = 3t^2\dx{t}.$
+  }
+  \onslide<3->{
+    Hence $\dx{u}/3 = t^2\dx{t}$.
+  }
+  \onslide<4->{
+    Therefore
+  }
+  \begin{eqnarray*}
+    \onslide<5->{\int \frac{\alert<6>{t^2}}{1 + t^3}\alert<6>{\dx{t}} &=&}
+    \onslide<6->{\int \frac{1}{u}\alert<6>{\frac{\dx{u}}{3}}\\}
+    \onslide<7->{&=& \frac{1}{3}\int \frac{\dx{u}}{u}\\}
+    \onslide<8->{&=& \ln\abs{u} + c\\}
+    \onslide<9->{&=& \ln\abs{1 + t^3} + c.}
+  \end{eqnarray*}
+\end{frame}
+\end{document}
