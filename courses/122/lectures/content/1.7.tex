@@ -22,7 +22,7 @@
       \onslide<4->{&=& P_0a^ta^d\\}
       \onslide<5->{&=& P_0a^t a^{\log_a(2)}\\}
       \onslide<6->{&=& 2P_0a^t\\}
-      \onslide<7->{&=& 2P(t)}
+      \onslide<7->{&=& 2P(t).}
   \end{eqnarray*}}
 \end{frame}
 
@@ -35,7 +35,7 @@
       \onslide<4->{&=& P_0a^ta^h\\}
       \onslide<5->{&=& P_0a^t a^{-\log_a(2)}\\}
       \onslide<6->{&=& \frac{1}{2}P_0a^t\\}
-      \onslide<7->{&=& \frac{1}{2}P(t)}
+      \onslide<7->{&=& \frac{1}{2}P(t).}
   \end{eqnarray*}}
 \end{frame}
 
@@ -68,7 +68,7 @@
       \onslide<3->{0.6 &=& 2.4e^{-0.004t}\\}
       \onslide<4->{\Rightarrow e^{-0.004t} &=& \frac{2.4}{0.6} = \frac{1}{4}\\}
       \onslide<5->{\Rightarrow -0.004t &=& \ln\left(\frac{1}{4}\right) = -\ln(4)\\}
-      \onslide<6->{\Rightarrow t &=& \frac{1}{0.004}\ln(4) \approx 346.57 hours.\\}
+      \onslide<6->{\Rightarrow t &=& \frac{1}{0.004}\ln(4) \approx 346.57\ \text{hours}.\\}
     \end{eqnarray*}
     \onslide<7->{Therefore, it will take approximately $346.57/24 = 14.4$ days.}
   \end{enumerate}
@@ -117,15 +117,15 @@
   \begin{center}
     \begin{tabular}{cc}
       Compounding Period & Account Balance\\
-      \onslide<2->{$1$ & $P_0(1 + \frac{r}{n})$\\}
-      \onslide<3->{$2$ & $P_0(1 + \frac{r}{n})(1 + \frac{r}{n}) = P_0(1 + \frac{r}{n})^2$\\}
-      \onslide<4->{$3$ & $P_0(1 + \frac{r}{n})^2(1 + \frac{r}{n}) = P_0(1 + \frac{r}{n})^3$\\}
+      \onslide<2->{$1$ & $P_0\left(1 + \frac{r}{n}\right)$\\}
+      \onslide<3->{$2$ & $P_0\left(1 + \frac{r}{n}\right)\left(1 + \frac{r}{n}\right) = P_0\left(1 + \frac{r}{n}\right)^2$\\}
+      \onslide<4->{$3$ & $P_0\left(1 + \frac{r}{n}\right)^2\left(1 + \frac{r}{n}\right) = P_0\left(1 + \frac{r}{n}\right)^3$\\}
       \onslide<5->{\vdots & \vdots \\}
-      \onslide<6->{$n$ & $P_0(1 + \frac{r}{n})^n$\\}
+      \onslide<6->{$n$ & $P_0\left(1 + \frac{r}{n}\right)^n$\\}
     \end{tabular}
-    \onslide<7->{So at the end of the year, the balance will be $P_0(1 + \frac{r}{n})^n$.}
+    \onslide<7->{So at the end of the year, the balance will be $P_0\left(1 + \frac{r}{n}\right)^n$.}
     \onslide<8->{Continuing this way, the account balance after $t$ years will be
-      $$P_0(1 + \frac{r}{n})^{nt}.$$}
+      $$P_0\left(1 + \frac{r}{n}\right)^{nt}.$$}
   \end{center}
 \end{frame}
 
@@ -137,7 +137,7 @@
   \onslide<3->{The function for the account balance is
     $$P_0\left(1 + \frac{r}{n}\right)^{nt} = P_0\left(\left(1 + \frac{r}{100n}\right)^n\right)^t.$$}
   \onslide<4->{Therefore the doubling time is
-    $$d = \log_{\left(1 + \frac{r}{100n}\right)^n}(2)\onslide<5->{= \frac{\ln(2)}{\ln\left(\left(1 + \frac{r}{100n}\right)^n\right)}}\onslide<6->{ = \frac{ln(2)}{n\ln\left(1 + \frac{r}{100n}\right)}}.$$}
+    $$d = \log_{\left(1 + \frac{r}{100n}\right)^n}(2)\onslide<5->{= \frac{\ln(2)}{\ln\left(\left(1 + \frac{r}{100n}\right)^n\right)}}\onslide<6->{ = \frac{ln(2)}{n\ln\left(1 + \frac{r}{100n}\right)}.}$$}
 \end{frame}
 
 \begin{frame}{Example}
@@ -158,7 +158,7 @@
 \begin{frame}{Continuously Compounding Interest}
   The method above is discrete.
   \onslide<2->{If instead, we wish to compound interest at every instant, we get {\it continuously compounding interest},
-    $$P(t) = P_0e^{rt}$$}
+    $$P(t) = P_0e^{rt}.$$}
 \end{frame}
 
 \begin{frame}{Example}

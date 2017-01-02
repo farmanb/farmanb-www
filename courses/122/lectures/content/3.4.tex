@@ -4,14 +4,14 @@
 
 \begin{frame}{Product Rule}
   If $f$ and $g$ are differentiable functions, then 
-  $$\ddx(f(x)g(x)) = f^\prime(x)g(x) + f(x)g^\prime(x).$$
+  $$\ddx{x}(f(x)g(x)) = f^\prime(x)g(x) + f(x)g^\prime(x).$$
 \end{frame}
 
 \begin{frame}{Quotient Rule}
   Assume that $f$ and $g$ are differentiable functions and $f(x)/g(x)$ is well-defined.
   \onslide<2->{Using the Product and Chain Rules we can compute the derivative of the quotient:}
   \begin{eqnarray*}
-    \onslide<3->{\ddx\left(\frac{f(x)}{g(x)}\right)&=& \ddx\left(f(x) g(x)^{-1}\right)\\}
+    \onslide<3->{\ddx{x}\left(\frac{f(x)}{g(x)}\right)&=& \ddx{x}\left(f(x) g(x)^{-1}\right)\\}
     \onslide<4->{&=& f^\prime(x)g(x)^{-1} + f(x)(-1)g(x)^{-2}g^\prime(x)\\}
     \onslide<5->{&=& \frac{f^\prime(x)}{g(x)} - \frac{f(x)g^\prime(x)}{g(x)^2}\\}
     \onslide<6->{&=& \frac{f^\prime(x)g(x) - f(x)g^\prime(x)}{g(x)^2}.}
@@ -33,18 +33,18 @@
   
   \only<2-4>{
     \begin{eqnarray*}
-      \onslide<2-4>{\ddx(x^2e^{2x})}\onslide<3-4>{ &=& 2xe^{2x} + x^2(2e^{2x})\\} \onslide<4>{&=& 2xe^{2x}(1 + x)}
+      \onslide<2-4>{\ddx{x}(x^2e^{2x})}\onslide<3-4>{ &=& 2xe^{2x} + x^2(2e^{2x})\\} \onslide<4>{&=& 2xe^{2x}(1 + x)}
     \end{eqnarray*}
   }
   \only<5-7>{
     \begin{eqnarray*}
-      \onslide<5-7>{\frac{\operatorname{d}}{\operatorname{dt}}(t^3\ln(t+1))}\onslide<6-7>{ &=& 3t^2\ln(t+1) + t^3\left(\frac{1}{t+1}\right)}\\
-      \onslide<7>{&=& 3t^2\ln(t+1) + \frac{t^3}{t+1}}.
+      \onslide<5-7>{\ddx{t}(t^3\ln(t+1))}\onslide<6-7>{ &=& 3t^2\ln(t+1) + t^3\left(\frac{1}{t+1}\right)}\\
+      \onslide<7>{&=& 3t^2\ln(t+1) + \frac{t^3}{t+1}.}
     \end{eqnarray*}
   }
   \only<8->{
     \begin{eqnarray*}
-      \onslide<8->{\ddx(3x^2 + 5x)e^x}\onslide<9->{&=& (6x + 5)e^x + (3x^2 + 5x)e^x\\}
+      \onslide<8->{\ddx{x}(3x^2 + 5x)e^x}\onslide<9->{&=& (6x + 5)e^x + (3x^2 + 5x)e^x\\}
       \onslide<10->{&=&e^x(6x + 5 + 3x^2 + 5x)\\}
       \onslide<11->{&=& e^x(3x^2 + 11x + 5).}
     \end{eqnarray*}
@@ -54,7 +54,7 @@
 \begin{frame}{Example}
   Differentiate $\frac{e^{2t}}{t}$.
   \begin{eqnarray*}
-    \onslide<2->{\frac{\operatorname{d}}{\operatorname{dt}}\frac{e^{2t}}{t}} \onslide<3->{ &=& \frac{2e^{2t}t - e^{2t}(1)}{t^2}}\\
+    \onslide<2->{\ddx{t}\frac{e^{2t}}{t}} \onslide<3->{ &=& \frac{2e^{2t}t - e^{2t}(1)}{t^2}}\\
     \onslide<4->{&=& \frac{(2t - 1)e^{2t}}{t^2}}
   \end{eqnarray*}
 \end{frame}
@@ -75,8 +75,8 @@
     }
   \onslide<7->{
     \begin{eqnarray*}
-      \onslide<7->{\frac{\operatorname{d}}{\operatorname{dq}}R(q) &=& \frac{\operatorname{d}}{\operatorname{dq}}(80qe^{-0.003q})\\}
-      \onslide<8->{&=& 80\frac{\operatorname{d}}{\operatorname{dq}}qe^{-0.003q}\\}
+      \onslide<7->{\ddx{q}R(q) &=& \ddx{q}(80qe^{-0.003q})\\}
+      \onslide<8->{&=& 80\ddx{q}qe^{-0.003q}\\}
       \onslide<9->{&=& 80(e^{-0.003q} + q(-0.003)e^{-0.003q})\\}
       \onslide<10->{&=& 80e^{-0.003q}(1 - 0.003q).}
     \end{eqnarray*}
@@ -99,20 +99,20 @@
   \begin{overprint}
     \only<2-5>{
       \begin{eqnarray*}
-        \onslide<2-5>{\ddx\left(\frac{5x^2}{x^3 + 1}\right)}\onslide<3-5>{ &=& \frac{10(x^3 + 1) - 5x^2(3x^2)}{(x^3 + 1)^2}\\}
+        \onslide<2-5>{\ddx{x}\left(\frac{5x^2}{x^3 + 1}\right)}\onslide<3-5>{ &=& \frac{10(x^3 + 1) - 5x^2(3x^2)}{(x^3 + 1)^2}\\}
         \onslide<4-5>{&=& \frac{10x^4 + 10x - 15x^2}{(x^3 + 1)^2}\\}
         \onslide<5>{&=& \frac{-5x^4 + 10}{(x^3 + 1)^2}.}
       \end{eqnarray*}
       }
     \only<6-8>{
       \begin{eqnarray*}
-        \onslide<6-8>{\ddx\frac{1}{1 + e^x}} \onslide<7-8>{&=& \frac{0(1 + e^x) - (1)e^x}{(1 + e^x)^2}\\}
+        \onslide<6-8>{\ddx{x}\frac{1}{1 + e^x}} \onslide<7-8>{&=& \frac{0(1 + e^x) - (1)e^x}{(1 + e^x)^2}\\}
         \onslide<8>{&=& \frac{-e^x}{(1 + e^x)^2}.}
       \end{eqnarray*}
       }
     \only<9->{
       \begin{eqnarray*}
-        \onslide<9->{\ddx\frac{e^x}{x^2}} \onslide<10->{&=& \frac{e^xx^2 - e^x(2x)}{x^4}\\}
+        \onslide<9->{\ddx{x}\frac{e^x}{x^2}} \onslide<10->{&=& \frac{e^xx^2 - e^x(2x)}{x^4}\\}
         \onslide<11->{&=& \frac{e^x(x^2 - 2x)}{x^4}\\}
         \onslide<12->{&=& \frac{e^x(x)(x - 2)}{x^4}\\}
         \onslide<13->{&=& \frac{e^x(x - 2)}{x^3}.}

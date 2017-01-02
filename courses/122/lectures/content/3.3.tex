@@ -29,7 +29,7 @@
   Differentiate $(x + 5)^2$.
   
   \begin{eqnarray*}
-    \onslide<2->{\ddx(x + 5)^2 &=& 2(x + 5)^1\cdot\ddx(x + 5)\\}
+    \onslide<2->{\ddx{x}(x + 5)^2 &=& 2(x + 5)^1\cdot\ddx{x}(x + 5)\\}
     \onslide<3->{&=&2(x + 5)(1)\\}
     \onslide<4->{&=& 2(x + 5)\\}
     \onslide<5->{&=& 2x + 10.}
@@ -40,7 +40,7 @@
   Find the derivative of $e^{3x}$.
   
   \begin{eqnarray*}
-    \onslide<2->{\ddx{e^{3x}} &=& e^{3x}\cdot\ddx(3x)\\}
+    \onslide<2->{\ddx{x}{e^{3x}} &=& e^{3x}\cdot\ddx{x}(3x)\\}
     \onslide<3->{&=& e^{3x} \cdot 3\\}
     \onslide<4->{&=& 3e^{3x}.}
   \end{eqnarray*}
@@ -50,8 +50,8 @@
   Differentiate $\ln\left(2t^2 + 3\right)^2$
 
   \begin{eqnarray*}
-    \onslide<2->{\ddx\left(\ln\left(2t^2 + 3\right)^2\right) &=& 2\ln\left(2t^2 + 3\right)^1\cdot \ddx \ln\left(2t^2 + 3\right)\\}
-    \onslide<3->{&=& 2\ln\left(2t^2 + 3\right)\cdot \frac{\ddx\left(2t^2 + 3\right)}{2t^2 + 3}}\\
+    \onslide<2->{\ddx{x}\left(\ln\left(2t^2 + 3\right)^2\right) &=& 2\ln\left(2t^2 + 3\right)^1\cdot \ddx{x} \ln\left(2t^2 + 3\right)\\}
+    \onslide<3->{&=& 2\ln\left(2t^2 + 3\right)\cdot \frac{\ddx{x}\left(2t^2 + 3\right)}{2t^2 + 3}}\\
     \onslide<4->{&=& 2\ln\left(2t^2 + 3\right) \cdot \frac{4t}{2t^2 + 3}\\}
     \onslide<5->{&=& \frac{8t\ln\left(2t^2 + 3\right)}{2t^2 + 3}}
   \end{eqnarray*}
@@ -67,7 +67,7 @@
       \begin{eqnarray*}
         \onslide<3->{\frac{\operatorname{d}}{\operatorname{dt}}(G \circ s(t))} \onslide<4->{&=& G^\prime \circ s(t) \cdot s^\prime(t)\\}
         \onslide<5->{&=& 0.05\frac{\text{gal}}{\text{mile}} \cdot 30 \frac{\text{miles}}{\text{hour}}\\}
-        \onslide<6->{&=& 1.5 \frac{\text{gal}}{\text{hour}}}.
+        \onslide<6->{&=& 1.5 \frac{\text{gal}}{\text{hour}}.}
       \end{eqnarray*}
   \end{itemize}
 \end{frame}

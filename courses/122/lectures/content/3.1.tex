@@ -21,7 +21,7 @@
   \item<2->
     $$\frac{\operatorname{d}}{\operatorname{dx}}\left(f(x) \pm g(x)\right) \onslide<3->{= f^\prime(x) \pm g^\prime(x)}$$
   \item<4->
-    $$\frac{\operatorname{d}}{\operatorname{dx}}\left(af(x)\right) \onslide<5->{= af^\prime(x)}.$$
+    $$\frac{\operatorname{d}}{\operatorname{dx}}\left(af(x)\right) \onslide<5->{= af^\prime(x).}$$
   \end{itemize}
 \end{frame}
 
@@ -29,12 +29,12 @@
 
 \begin{frame}{Derivative of a Power Functions}
   The derivative of $x^n$ for $n \in \R$ is 
-  $$\ddx\left(x^n\right) = nx^{n-1}.$$
+  $$\ddx{x}\left(x^n\right) = nx^{n-1}.$$
 
   \onslide<2->{
     \begin{rmk}
       The derivative of a linear function is
-      $$\ddx\left(mx + b\right) = m\ddx(x) + \ddx(b) = m$$
+      $$\ddx{x}\left(mx + b\right) = m\ddx{x}x + \ddx{x}(b) = m$$
     \end{rmk}
   }
 \end{frame}
@@ -44,9 +44,9 @@
   $$p(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots + a_2x^2 + a_1x + a_0.$$
   \onslide<2->{The derivative is
     \begin{eqnarray*}
-      p^\prime(x) &=& \ddx(a_nx^n + a_{n-1}x^{n-1} + \cdots + a_2x^2 + a_1x + a_0) \\
-      \onslide<2->{&=& a_n\ddx(x^n) + a_{n-1}\ddx(x^{n-1}) + \cdots\\
-        &+& a_2\ddx(x^2) + a_1\ddx(x)\\}
+      p^\prime(x) &=& \ddx{x}(a_nx^n + a_{n-1}x^{n-1} + \cdots + a_2x^2 + a_1x + a_0) \\
+      \onslide<2->{&=& a_n\ddx{x}(x^n) + a_{n-1}\ddx{x}(x^{n-1}) + \cdots\\
+        &+& a_2\ddx{x}(x^2) + a_1\ddx{x}(x)\\}
       \onslide<3->{&=& na_nx^{n-1} + (n-1)a_{n-1}x^{n-2} + \cdots + 2a_2x + a_1.}
     \end{eqnarray*}
   }
@@ -86,9 +86,9 @@
   $$f(x) = x^3 - 2x^2 - 5x + 7.$$
   
   \begin{eqnarray*}
-    \onslide<2->{f^\prime(x) &=& \ddx(x^3 - 2x^2 - 5x + 7)\\}
-    \onslide<3->{&=& \ddx(x^3) - \ddx(2x^2) - \ddx(5x) + \ddx(7)\\}
-    \onslide<4->{&=& \ddx(x^3) - 2\ddx(x^2) - 5\ddx(x) + 0\\}
+    \onslide<2->{f^\prime(x) &=& \ddx{x}(x^3 - 2x^2 - 5x + 7)\\}
+    \onslide<3->{&=& \ddx{x}(x^3) - \ddx{x}(2x^2) - \ddx{x}(5x) + \ddx{x}(7)\\}
+    \onslide<4->{&=& \ddx{x}(x^3) - 2\ddx{x}(x^2) - 5\ddx{x}(x) + 0\\}
     \onslide<5->{&=& 3x^2 - 4x - 5.}
   \end{eqnarray*}
 \end{frame}
