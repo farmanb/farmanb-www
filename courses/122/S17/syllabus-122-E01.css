@@ -1,11 +1,10 @@
  
 /* start css.sty */
 .cmmi-10{font-style: italic;}
-.cmr-17{font-size:170%;}
-.cmr-12{font-size:120%;}
-.cmtt-10{font-family: monospace;}
+.cmr-8{font-size:80%;}
 .cmbx-10{ font-weight: bold;}
 .cmti-10{ font-style: italic;}
+.cmtt-10{font-family: monospace;}
 p.noindent { text-indent: 0em }
 td p.noindent { text-indent: 0em; margin-top:0em; }
 p.nopar { text-indent: 0em; }
@@ -93,26 +92,22 @@ div.pmatrix {text-align:center;}
 table.pmatrix {width:100%;}
 span.bar-css {text-decoration:overline;}
 img.cdots{vertical-align:middle;}
-.partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
-.index-item, .index-subitem, .index-subsubitem {display:block}
+span.footnote-mark{ vertical-align: super; font-size:80%; }
+div.submaketitle{ text-align:left; margin-top:2em; border-top: 1px solid black; border-bottom: 1px solid black; margin-left:5%; margin-right:5%; font-size:85%; line-height: 95%;}
+div.submaketitle div {margin-top:0.5em; margin-bottom:0.5em; }
+div.submaketitle p { margin-top:0em; margin-bottom:0em; }
+div.abstract{ margin-top: 2em; text-align:left; margin-right:15pt; margin-left:15pt; }
+div.addresses p {margin-top:0em; margin-bottom:0em; }
+h2.titleHead{text-align:center;}
+div.maketitle{ margin-bottom: 2em; text-align:center; }
 div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}
 div.caption span.id{font-weight: bold; white-space: nowrap; }
-h1.partHead{text-align: center}
 p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
 p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
-.paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}
-.subparagraphHead, .likesubparagraphHead { font-weight: bold;}
-.quote {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; margin-right:1em; text-align:justify;}
-.verse{white-space:nowrap; margin-left:2em}
-div.maketitle {text-align:center;}
-h2.titleHead{text-align:center;}
-div.maketitle{ margin-bottom: 2em; }
-div.author, div.date {text-align:center;}
-div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }
-div.author{white-space: nowrap;}
-.quotation {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; }
-.abstract p {margin-left:5%; margin-right:5%;}
-div.abstract {width:100%;}
+.qed {width:2ex; float:right; text-align:right;}
+.partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
+div.translators {text-align:right; margin-bottom:0.7em;}
+.sectionHead{text-align:center;}
 .equation td{text-align:center; }
 .equation-star td{text-align:center; }
 table.equation-star { width:100%; }
