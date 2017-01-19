@@ -92,7 +92,7 @@
 
 \begin{frame}
   The release of chlorofluorocarbons (CFCs) used in air conditioners and household aerosols destroys the ozone layer in the upper atmosphere.
-  \onslide<2->{The quantity of ozone, $Q(t)$, decays exponentially at a continuous rate of $0.025\%$ per year.}
+  \onslide<2->{The quantity of ozone, $Q(t)$, decays exponentially at a continuous rate of $0.25\%$ per year.}
   \onslide<3->{What is the half-life of ozone?\\}
 
   \onslide<4->{The half life is given by
@@ -105,7 +105,7 @@
 \end{frame}
 \subsection{Financial Applications}
 \begin{frame}{Compound Interest}
-  Assume a sum of money $P_0$ is deposited in an account paying interest at a rate of $r\%$ yearly, compounded $n$ times per year.
+  Assume a sum of money $P_0$ is deposited in an account paying interest at a rate of $r$ yearly, compounded $n$ times per year.
   \onslide<2->{This means that each compounding period, the account earns interest on the balance at a rate of $r/n$.}\\
   
   \onslide<3->{What is the balance of the account after $t$ years?}
@@ -130,14 +130,14 @@
 \end{frame}
 
 \begin{frame}{Doubling Time}
-  Say you invest $P_0$ dollars at a rate of $r\%$ per year, compounded $n$ times.
+  Say you invest $P_0$ dollars at a rate of $r$ per year, compounded $n$ times.
   \onslide<2->{What is the doubling time?}
   
   
   \onslide<3->{The function for the account balance is
-    $$P_0\left(1 + \frac{r}{n}\right)^{nt} = P_0\left(\left(1 + \frac{r}{100n}\right)^n\right)^t.$$}
+    $$P_0\left(1 + \frac{r}{n}\right)^{nt} = P_0\left(\left(1 + \frac{r}{n}\right)^n\right)^t.$$}
   \onslide<4->{Therefore the doubling time is
-    $$d = \log_{\left(1 + \frac{r}{100n}\right)^n}(2)\onslide<5->{= \frac{\ln(2)}{\ln\left(\left(1 + \frac{r}{100n}\right)^n\right)}}\onslide<6->{ = \frac{ln(2)}{n\ln\left(1 + \frac{r}{100n}\right)}.}$$}
+    $$d = \log_{\left(1 + \frac{r}{n}\right)^n}(2)\onslide<5->{= \frac{\ln(2)}{\ln\left(\left(1 + \frac{r}{n}\right)^n\right)}}\onslide<6->{ = \frac{ln(2)}{n\ln\left(1 + \frac{r}{n}\right)}.}$$}
 \end{frame}
 
 \begin{frame}{Example}
@@ -177,8 +177,8 @@
 \begin{frame}{Doubling Time}
   Say you invest $P_0$ dollars at a rate of $r\%$ per year compounding continuously.
   \onslide<2->{The account balance is given by the function
-    $$P_0e^{rt} = P_0 (e^r)^t.$$}
+    $$P_0e^{\frac{r}{100}t} = P_0 (e^{\frac{r}{100}})^t.$$}
   \onslide<3->{Hence the doubling time is given by}
-  $$\onslide<3->{\log_{e^{r/100}}(2) = \frac{\ln(2)}{\ln(e^{r/100})}}\onslide<4->{ = \frac{ln(2)}{r/100}}\onslide<5->{ \approx \frac{70}{r}.}$$
+  $$\onslide<3->{\log_{e^{\frac{r}{100}}}(2) = \frac{\ln(2)}{\ln(e^{\frac{r}{100}})}}\onslide<4->{ = \frac{ln(2)}{\frac{r}{100}}}\onslide<5->{ \approx \frac{70}{r}.}$$
 \end{frame}
 \end{document}
