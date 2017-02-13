@@ -5,7 +5,7 @@
 \begin{frame}{Derivative of Constants}
   \begin{itemize}
   \item<1->
-    Let $f(x) = a$ for $a \in \R$.
+    Let $f(x) = a$ for $a \in \R$ (this means ``a is an element of $\R$'', the set of real numbers).
   \item<2->
     The difference quotient for any $x_0, x_1$ is
     $$\onslide<2->{\frac{f(x_0) - f(x_1)}{x_0 - x_1}}\onslide<3->{= \frac{a - a }{x_0 - x_1}}\onslide<4->{ = 0.}$$
@@ -19,9 +19,9 @@
   Let $f$ and $g$ be differentiable functions, and let $a \in \R$.
   \begin{itemize}
   \item<2->
-    $$\frac{\operatorname{d}}{\operatorname{dx}}\left(f(x) \pm g(x)\right) \onslide<3->{= f^\prime(x) \pm g^\prime(x)}$$
+    $$\ddx{x}\left(f(x) \pm g(x)\right) \onslide<3->{= \ddx{x}f(x) \pm \ddx{x}g(x)}$$
   \item<4->
-    $$\frac{\operatorname{d}}{\operatorname{dx}}\left(af(x)\right) \onslide<5->{= af^\prime(x).}$$
+    $$\frac{\operatorname{d}}{\operatorname{dx}}\left(af(x)\right) \onslide<5->{= a \ddx{x}f(x).}$$
   \end{itemize}
 \end{frame}
 
@@ -56,29 +56,56 @@
   Differentiate the following
   \begin{multicols}{2}
     \begin{enumerate}
-    \item 
+    \item<alert@2-6>
       $A(t) = 3t^5$
-    \item
+    \item<alert@7-10>
       $r(p) = p^5 + p^3$
-    \item
+    \item<alert@11-16>
       $f(x) = 5x^2 - 7x^3$
-    \item
-      $g(t) = t^2/4 + 3$
+    \item<alert@17->
+      $g(t) = \frac{t^2}{4} + 3$
     \end{enumerate}
   \end{multicols}
   
-  \begin{multicols}{2}
-    \begin{enumerate}
-    \item<2->
-      $A^\prime(t) = 15t^2$.
-    \item<3->
-      $r^\prime(p) = 5p^4 + 3p^2$.
-    \item<4->
-      $f^\prime(x) = 10x - 21x^2$.
-    \item<5->
-      $g^\prime(t) = t/2$.
-    \end{enumerate}
-  \end{multicols}
+  \begin{minipage}[t]{\linewidth}
+    \only<2-6>{
+      \begin{eqnarray*}
+        A^\prime(t) &=& \onslide<3->{\ddx{t}\left(3t^5\right)}\\
+        \onslide<4->{&=& 3 \left(\ddx{t}\left(t^5\right)\right)\\}
+        \onslide<5->{&=& 3 \left(5 t^4\right)\\}
+        \onslide<6->{&=& 15 t^4.}
+      \end{eqnarray*}
+    }
+    \only<7-10>{
+      \begin{eqnarray*}
+        \onslide<7->{r^\prime(p) &=&}
+        \onslide<8->{\ddx{p}\left(p^5 + p^3\right)\\}
+        \onslide<9->{&=& \ddx{p}\left(p^5\right) + \ddx{p}\left(p^3\right)\\}
+        \onslide<10->{&=& 5p^4 + 3p^2.}
+      \end{eqnarray*}
+    }
+    \only<11-16>{
+      \begin{eqnarray*}
+        \onslide<11->{f^\prime(x) &=& }
+        \onslide<12->{\ddx{x}\left(5x^2 - 7x^3\right)}
+        \onslide<13->{=\ddx{x}\left(5x^2\right) - \ddx{x}\left(7x^3\right)\\}
+        \onslide<14->{&=& 5\ddx{x}\left(x^2\right) - 7\ddx{x}\left(x^3\right)}
+        \onslide<15->{= 5(2x) - 7(3x^2)\\}
+        \onslide<16->{&=& 10x - 21x^2.}
+      \end{eqnarray*}
+    }
+    \only<17->{
+      \begin{eqnarray*}
+        \onslide<17->{g^\prime(t) &=&}
+        \onslide<18->{\ddx{t}\left(\frac{t^2}{4} + 3\right)}
+        \onslide<19->{= \ddx{t}\left(\frac{t^2}{4}\right) + \ddx{t}\left(3\right)\\}
+        \onslide<20->{&=& \frac{1}{4}\ddx{t}\left(t^2\right) + 0\\}
+        \onslide<21->{&=& \frac{1}{4}\left(2t\right)\\}
+        \onslide<22->{&=& \frac{t}{2}.}
+      \end{eqnarray*}
+    }
+  \end{minipage}
+
 \end{frame}
 
 \begin{frame}{Example}

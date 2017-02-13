@@ -12,9 +12,10 @@
   \onslide<2->{Using the Product and Chain Rules we can compute the derivative of the quotient:}
   \begin{eqnarray*}
     \onslide<3->{\ddx{x}\left(\frac{f(x)}{g(x)}\right)&=& \ddx{x}\left(f(x) g(x)^{-1}\right)\\}
-    \onslide<4->{&=& f^\prime(x)g(x)^{-1} + f(x)(-1)g(x)^{-2}g^\prime(x)\\}
-    \onslide<5->{&=& \frac{f^\prime(x)}{g(x)} - \frac{f(x)g^\prime(x)}{g(x)^2}\\}
-    \onslide<6->{&=& \frac{f^\prime(x)g(x) - f(x)g^\prime(x)}{g(x)^2}.}
+    \onslide<4->{&=& f^\prime(x)g(x)^{-1} + f(x)\ddx{x}\left(g(x)^{-1}\right)\\}
+    \onslide<5->{&=& \frac{f^\prime(x)}{g(x)} + f(x)\left((-1)g(x)^{-2}g^\prime(x)\right)\\}
+    \onslide<6->{&=& \frac{f^\prime(x)}{g(x)} - \frac{f(x)g^\prime(x)}{g(x)^2}\\}
+    \onslide<7->{&=& \frac{f^\prime(x)g(x) - f(x)g^\prime(x)}{g(x)^2}.}
   \end{eqnarray*}
 \end{frame}
 
@@ -22,31 +23,39 @@
   Differentiate
   \begin{multicols}{3}
     \begin{enumerate}[(a)]
-    \item<alert@2-4>
+    \item<alert@2-6>
       $x^2e^{2x}$
-    \item<alert@5-7>
+    \item<alert@7-10>
       $t^3\ln(t+ 1)$
-    \item<alert@8->
+    \item<alert@11-15>
       $(3x^2 + 5x)e^x$
     \end{enumerate}
   \end{multicols}    
   
-  \only<2-4>{
+  \only<2-6>{
     \begin{eqnarray*}
-      \onslide<2-4>{\ddx{x}(x^2e^{2x})}\onslide<3-4>{ &=& 2xe^{2x} + x^2(2e^{2x})\\} \onslide<4>{&=& 2xe^{2x}(1 + x)}
+      \onslide<2->{\ddx{x}(x^2e^{2x}) &=& }
+      \onslide<3->{\ddx{x}(x^2) \cdot e^{2x} + x^2 \cdot \ddx{x}(e^{2x})\\}
+      \onslide<4->{&=& 2xe^{2x} + x^2\left(\ddx{x}(2x)\cdot e^{2x}\right)\\}
+      \onslide<5->{&=& 2xe^{2x} + 2x^2e^{2x}\\}
+      \onslide<6>{&=& 2xe^{2x}(1 + x)}
     \end{eqnarray*}
   }
-  \only<5-7>{
+  \only<7-10>{
     \begin{eqnarray*}
-      \onslide<5-7>{\ddx{t}(t^3\ln(t+1))}\onslide<6-7>{ &=& 3t^2\ln(t+1) + t^3\left(\frac{1}{t+1}\right)}\\
-      \onslide<7>{&=& 3t^2\ln(t+1) + \frac{t^3}{t+1}.}
+      \onslide<7->{\ddx{t}(t^3\ln(t+1))}
+      \onslide<8->{&=& \ddx{t}(t^3) \cdot \ln(t+1) + t^3 \cdot \ddx{t}\left(\ln(t+1)\right)\\}
+      \onslide<9->{&=& 3t^2\ln(t+1) + t^3\left(\frac{\ddx{t}(t + 1)}{t+1}\right)}\\
+      \onslide<10>{&=& 3t^2\ln(t+1) + \frac{t^3}{t+1}.}
     \end{eqnarray*}
   }
-  \only<8->{
+  \only<11-15>{
     \begin{eqnarray*}
-      \onslide<8->{\ddx{x}(3x^2 + 5x)e^x}\onslide<9->{&=& (6x + 5)e^x + (3x^2 + 5x)e^x\\}
-      \onslide<10->{&=&e^x(6x + 5 + 3x^2 + 5x)\\}
-      \onslide<11->{&=& e^x(3x^2 + 11x + 5).}
+      \onslide<11->{\ddx{x}\left((3x^2 + 5x)e^x\right) &=&}
+      \onslide<12->{\ddx{x}(3x^2 + 5x) \cdot e^x + (3x^2 + 5x) \cdot \ddx{e^x}\\}
+      \onslide<13->{&=& (6x + 5)e^x + (3x^2 + 5x)e^x\\}
+      \onslide<14->{&=&e^x(6x + 5 + 3x^2 + 5x)\\}
+      \onslide<15->{&=& e^x(3x^2 + 11x + 5).}
     \end{eqnarray*}
   }
 \end{frame}
@@ -54,8 +63,11 @@
 \begin{frame}{Example}
   Differentiate $\frac{e^{2t}}{t}$.
   \begin{eqnarray*}
-    \onslide<2->{\ddx{t}\frac{e^{2t}}{t}} \onslide<3->{ &=& \frac{2e^{2t}t - e^{2t}(1)}{t^2}}\\
-    \onslide<4->{&=& \frac{(2t - 1)e^{2t}}{t^2}}
+    \onslide<2->{\ddx{t}\frac{e^{2t}}{t}} 
+    \onslide<3->{&=& \frac{\ddx{t}\left(e^{2t}\right) \cdot t - e^{2t} \cdot \ddx{t}(t)}{t^2}\\}
+    \onslide<4->{&=& \frac{\ddx{t}(2t)\cdot te^{2t} - e^{2t}(1)}{t^2}}\\
+    \onslide<5->{&=& \frac{2te^{2t} - e^{2t}}{t^2}\\}
+    \onslide<6->{&=& \frac{(2t - 1)e^{2t}}{t^2}}
   \end{eqnarray*}
 \end{frame}
 
@@ -99,8 +111,9 @@
   \begin{overprint}
     \only<2-5>{
       \begin{eqnarray*}
-        \onslide<2-5>{\ddx{x}\left(\frac{5x^2}{x^3 + 1}\right)}\onslide<3-5>{ &=& \frac{10(x^3 + 1) - 5x^2(3x^2)}{(x^3 + 1)^2}\\}
-        \onslide<4-5>{&=& \frac{10x^4 + 10x - 15x^2}{(x^3 + 1)^2}\\}
+        \onslide<2-5>{\ddx{x}\left(\frac{5x^2}{x^3 + 1}\right)}
+        \onslide<3-5>{ &=& \frac{10x(x^3 + 1) - 5x^2(3x^2)}{(x^3 + 1)^2}\\}
+        \onslide<4-5>{&=& \frac{10x^4 + 10x - 15x^4}{(x^3 + 1)^2}\\}
         \onslide<5>{&=& \frac{-5x^4 + 10}{(x^3 + 1)^2}.}
       \end{eqnarray*}
       }
