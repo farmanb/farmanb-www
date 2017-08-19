@@ -37,6 +37,7 @@ p,ul{margin:0 0 20px 0;}
 #content h2,#content h3,#content h4{color:#ddd;}
 #content a{color:#fff;text-decoration:underline;}
 #extended{padding:15px 30px;background-color:#f1e7d7;}
+#extended h1{color:#333;}
 #extended h2{color:#555;}
 #extended h3{color:#333;}
 
