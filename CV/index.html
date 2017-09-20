@@ -5,8 +5,6 @@
     <meta name="description" content="Blake Farman CV" />
     <meta name="keywords" content="Blake,Farman,CV,Curriculum,Vitae" />
     <meta name="author" content="Blake Farman" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Lato|Gentium+Basic" rel="stylesheet" type="text/css" />
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <link type="text/css" rel="stylesheet" href="style.css" media="screen" />
@@ -46,23 +44,7 @@
 		As an immediate application, we give a noncommutative projective derived Morita statement along the lines of Rickard and Orlov. <a href="https://arxiv.org/abs/1709.06470">arXiv:1709.06470</a>
 		</p>
 	    </div>
-	    <script>
-	      var acc = document.getElementsByClassName("accordion");
-	      var i;
 
-	      for (i = 0; i < acc.length; i++) {
-			      acc[i].onclick = function() {
-			      this.classList.toggle("active");
-			      var panel = this.nextElementSibling;
-			      if (panel.style.maxHeight){
-			      panel.style.maxHeight = null;
-			      } else {
-			      panel.style.maxHeight = panel.scrollHeight + "px";
-			      } 
-			      }
-			      }
-            </script>
-		     
 	    <div class="panel-group" id="accordion">
 	      <div class="panel panel-default">
 		<!--div class="panel-heading" style="color:#555555;background:#E5DCCD"-->
@@ -260,6 +242,20 @@
 	  });
 	  
 	  });
+	  var acc = document.getElementsByClassName("accordion");
+	      var i;
+
+	      for (i = 0; i < acc.length; i++) {
+			      acc[i].onclick = function() {
+			      this.classList.toggle("active");
+			      var panel = this.nextElementSibling;
+			      if (panel.style.maxHeight){
+			      panel.style.maxHeight = null;
+			      } else {
+			      panel.style.maxHeight = panel.scrollHeight + "px";
+			      } 
+			      }
+			      }
 	</script>
       </div>
     </body>
