@@ -46,7 +46,9 @@ button.accordion.active:after {
 
 div.panel {
     padding: 0 18px;
-    background-color: white;
+    /*background-color: white;*/
+    background: #A3A575;
+    color: #fff;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -202,9 +204,10 @@ Span 8:    100%
 }
 
 #content {
-  height:400px;
-  overflow:hidden;
-  position:relative;
+    /*height:400px;*/
+    height:auto;
+    overflow:hidden;
+    position:relative;
 }
 
 #pagecontainer {
@@ -233,20 +236,23 @@ Span 8:    100%
 #profile {
   background-color: #a3a673;
   color:#fff;
+  height:auto;
 }
 
 #resume {
   /*background-color: #a20025;*/
   background-color: #a3a673;
   color:#fff;
-  overflow-y:scroll;
+  /*overflow-y:scroll;*/
+  height:auto;
 }
 
 #contact {
   /*background-color: #737373;*/
   background-color: #a3a673;
   color:#fff;
-  overflow-y:scroll;
+  /*overflow-y:scroll;*/
+  height:auto;
 }
 
 #menu {
