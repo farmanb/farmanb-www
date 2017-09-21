@@ -8,6 +8,7 @@
     <meta name="author" content="Blake Farman" />
     <link href='http://fonts.googleapis.com/css?family=Lato|Gentium+Basic' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" type="text/css" media="all" href="../../../inland-forest.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
     <title>Math 111-E1B - Fall 2017</title>
@@ -24,60 +25,70 @@
 
 	<div id="nav" class="clearfix shadow">
 	  <ul>
-	    <li><a class="current" href="../../index.html">Home</a></li>
-	    <li><a href="../../teaching.html">teaching</a></li>
-	    <li><a href="../../CV-BFarman.pdf">CV</a></li>
-	    <li><a href="../../seminars.html">seminars</a></li>
-	    <!--li><a href="3-columns.html">3 columns</a></li>
-		<li><a href="full-width.html">Full width</a></li-->
+	    <li><a class="current" href="../../../index.html">Home</a></li>
+	    <li><a href="../../../teaching.html">teaching</a></li>
+	    <li><a href="../../../CV/index.html">CV</a></li>
+	    <li><a href="../../../seminars.html">seminars</a></li>
 	  </ul>
 	</div>
       </div>
       <div id="content" class="clearfix shadow">
-	<h2>Exam 1</h2>
-	<ul style="margin-left:5em">
-	  <li><a href="notes/exam01/8.24.17.pdf">8/24/17</a></li>
-	  <li><a href="notes/exam01/8.29.17.pdf">8/29/17</a></li>
-	  <li><a href="notes/exam01/8.31.17.pdf">8/31/17</a></li>
-	  <li><a href="notes/exam01/9.5.17.pdf">9/5/17</a></li>
-	  <li><a href="notes/exam01/9.7.17.pdf">9/7/17</a></li>
-	  <li><a href="notes/exam01/9.12.17.pdf">9/12/17</a></li>
-	  <li><a href="notes/exam01/9.14.17.pdf">9/14/17</a></li>
-	  <li><a href="notes/exam01/9.19.17.pdf">9/19/17</a></li>
-	  <li>9/21/17</li>
-	  <li>9/26/17</li>
-	</ul>
-      </div>
-      <div id="extended" class="clearfix shadow">
-	<h2>Exam 2</h2>
-	<ul style="margin-left:5em">
-	  <li>10/3/17</li>
-	  <li>10/5/17</li>
-	  <li>10/10/17</li>
-	  <li>10/12/17</li>
-	  <li>10/17/17</li>
-	  <li>10/24/17</li>
-	  <li>10/26/17</li>
-	  <li>10/31/17</li>
-	</ul>
-      </div>
-      <div id="content" class="clearfix shadow">
-	<h2>Exam 3</h2>
-	<ul style="margin-left:5em">
-	  <li>11/7/17</li>
-	  <li>11/9/17</li>
-	  <li>11/14/17</li>
-	  <li>11/16/17</li>
-	  <li>11/21/17</li>
-	  <li>11/28/17</li>
-	</ul>
-      </div>
-      <div id="extended" style="clearfix shadow">
-	<h2>Final Week</h2>
-	<ul style="margin-left:5em">
-	  <li>12/5/17</li>
-	  <li>12/7/17</li>
+	<button class="accordion">Exam 1</button>
+	<div class="panel"> 
+	  <p>
+	    <ul style="margin-left:5em">
+	      <li><a href="notes/exam01/8.24.17.pdf">8/24/17</a></li>
+	      <li><a href="notes/exam01/8.29.17.pdf">8/29/17</a></li>
+	      <li><a href="notes/exam01/8.31.17.pdf">8/31/17</a></li>
+	      <li><a href="notes/exam01/9.5.17.pdf">9/5/17</a></li>
+	      <li><a href="notes/exam01/9.7.17.pdf">9/7/17</a></li>
+	      <li><a href="notes/exam01/9.12.17.pdf">9/12/17</a></li>
+	      <li><a href="notes/exam01/9.14.17.pdf">9/14/17</a></li>
+	      <li><a href="notes/exam01/9.19.17.pdf">9/19/17</a></li>
+	      <li>9/21/17</li>
+	      <li>9/26/17</li>
+	    </ul>
+	  </p>
+	</div>
+	<button class="accordion">Exam 2</button>
+	<div class="panel">
+	  <p>
+	    <ul style="margin-left:5em">
+	      <li>10/3/17</li>
+	      <li>10/5/17</li>
+	      <li>10/10/17</li>
+	      <li>10/12/17</li>
+	      <li>10/17/17</li>
+	      <li>10/24/17</li>
+	      <li>10/26/17</li>
+	      <li>10/31/17</li>
+	    </ul>
+	  </p>
+	</div>
+	<button class="accordion">Exam 3</button>
+	<div class="panel">
+	  <p>
+	    <ul style="margin-left:5em">
+	      <li>11/7/17</li>
+	      <li>11/9/17</li>
+	      <li>11/14/17</li>
+	      <li>11/16/17</li>
+	      <li>11/21/17</li>
+	      <li>11/28/17</li>
+	    </ul>
+	  </p>
+	</div>
+	<button class="accordion">Final Week</button>
+	<div class="panel">
+	  <p>
+	    <ul style="margin-left:5em">
+	      <li>12/5/17</li>
+	      <li>12/7/17</li>
+	    </ul>
+	  </p>
+	</div>
       </div>
     </div>
+    <script type="text/javascript" src="accordion.js"></script>
   </body>
 </html>
