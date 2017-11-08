@@ -41,6 +41,14 @@ p,ul{margin:0 0 20px 0;}
 #extended h2{color:#555;}
 #extended h3{color:#333;}
 
+.dark{padding:15px 30px;background-color:#35371c;color:#ddd;}
+.dark a{color:#fff;text-decoration:underline;}
+.light{padding:15px 30px;background-color:#f1e7d7;}
+.light h1{color:#333;}
+.light h2{color:#555;}
+.light h3{color:#333;}
+
+
 /* Top links menu */
 #toplinks{padding:0 30px;}
 #toplinks ul{list-style:none;margin:0;text-align:right;}
