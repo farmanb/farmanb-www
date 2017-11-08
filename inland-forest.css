@@ -41,8 +41,9 @@ p,ul{margin:0 0 20px 0;}
 #extended h2{color:#555;}
 #extended h3{color:#333;}
 
-.dark{padding:15px 30px;background-color:#35371c;color:#ddd;}
+.dark{background:url(images/shadow.png) top center no-repeat;padding:15px 30px;background-color:#35371c;color:#ddd;}
 .dark a{color:#fff;text-decoration:underline;}
+.dark h2,.dark h3,.dark h4{color:#ddd;}
 .light{padding:15px 30px;background-color:#f1e7d7;}
 .light h1{color:#333;}
 .light h2{color:#555;}
@@ -270,4 +271,53 @@ table.section td{ vertical-align:top;}
 td.section {padding-right:2em; width:20%;}
 table.section {margin-top:1em;}
 .position table {width:100%;}
+
+/*Table for exam schedules*/
+.examtable {
+    border-collapse: collapse;
+    /*border: 2px solid rgb(200,200,200);*/
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    background-color: #f1e7d7;
+}
+
+.examtable td, th {
+    /*border: 1px solid rgb(190,190,190);*/
+    padding: 10px 20px;
+    font-family: Lato;
+}
+
+.examtable th {
+    font-size: 2.1em;
+    font-family: 'Gentium Basic';
+}
+
+.examtable td {
+    text-align: center;
+    font-size:13px;
+}
+
+/*tr:nth-child(even) td {
+            background-color: rgb(250,250,250);
+	    
+            }
+
+            tr:nth-child(odd) td {
+            background-color: #f1e7d7;
+            }*/
+
+.examtable caption {
+    font-family: 'Gentium Basic';
+    font-size: 1.6em;
+    padding: 10px;
+}
+
+.examtable tbody {
+    font-size: 90%;
+    /*font-style: italic;*/
+}
+
+.examtable tfoot {
+    font-weight: bold;
+}
 /* end css.sty */
