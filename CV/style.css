@@ -11,8 +11,8 @@
 }
 /*Accordion*/
 button.accordion {
-    background-color: #A3A575;
-    color: #fff;
+    background-color: #35371c;/*A3A575;*/
+    color: #ddd;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -25,7 +25,7 @@ button.accordion {
 
 button.accordion.active, button.accordion:hover {
     /*background-color: #EEE5D4;*/
-    background-color: #35371D;
+    background-color: #a3a673;/*35371c;*/
     /*color:#696B40;*/
     color: #fff;
     text-decoration:underline;
@@ -234,25 +234,27 @@ Span 8:    100%
 #nav ul li a.current{color:#333;}
 
 #profile {
-  background-color: #a3a673;
-  color:#fff;
+    /*
+  background-color: #a3a673;*/
+    background: #35371c;
+  color:#ddd;
   height:auto;
 }
 
 #resume {
   /*background-color: #a20025;*/
-  background-color: #a3a673;
-  color:#fff;
+    background-color: #35371c;/*a3a673;*/
+    color:#ddd;
   /*overflow-y:scroll;*/
   height:auto;
 }
 
 #contact {
-  /*background-color: #737373;*/
-  background-color: #a3a673;
-  color:#fff;
-  /*overflow-y:scroll;*/
-  height:auto;
+    /*background-color: #737373;*/
+    background-color: #35371c;/*a3a673;*/
+    color:#ddd;
+    /*overflow-y:scroll;*/
+    height:auto;
 }
 
 #menu {
@@ -279,12 +281,12 @@ Span 8:    100%
   /*color:#333;*/
   font-size:18px;
   /*color:#696c3d;*/
-  color:#ffffff;
+  color:#fff;
   text-align:center;
   text-decoration:none;
   text-transform:uppercase;
   margin-top:20px;
-  background-color:#35371c;
+  background-color:#a3a673;/*#35371c;*/
 }
 
 #menu li span {
@@ -304,19 +306,19 @@ Span 8:    100%
   line-height:43px;
   height:62px;
   margin-top:0;
-  color:#ffffff;
+  color:#ddd;
 }
 
 #menu li.active a.profile {
-  background-color:#a3a673;
+    background-color:#35371c;/*#a3a673;*/
 }
 
 #menu li.active a.resume {
-  background-color:#a3a673;
+    background-color:#35371c;/*#a3a673;*/
 }
 
 #menu li.active a.contact {
-  background-color:#a3a673;
+    background-color:#35371c;/*#a3a673;*/
 }
 
 #menu li a:hover {
@@ -371,8 +373,8 @@ Span 8:    100%
 #cv .date {
   position: relative;
   padding: 10px;
-  color: #ffffff;
-  background: rgba(0,0,0,0.5);
+  color: #fff;
+  background: #a3a673;/* rgba(0,0,0,0.5);*/
 }
 
 /* creates triangle */
@@ -385,7 +387,7 @@ Span 8:    100%
   width: 0;
   border-width: 10px 0 10px 10px;
   border-style: solid;
-  border-color: transparent rgba(0,0,0,0.5);
+  border-color: transparent #a3a673;/*rgba(0,0,0,0.5);*/
   margin-top:-10px;
 }
 
@@ -417,7 +419,7 @@ Span 8:    100%
   position: relative;
   padding: 10px;
   color: #ffffff;
-  background: rgba(0,0,0,0.5);
+  background: #a3a673;/*rgba(0,0,0,0.5);*/
 }
 
 /* creates triangle */
@@ -430,7 +432,7 @@ Span 8:    100%
   width: 0;
   border-width: 10px 0 10px 10px;
   border-style: solid;
-  border-color: transparent rgba(0,0,0,0.5);
+  border-color: transparent #a3a673;/*rgba(0,0,0,0.5);*/
   margin-top:-10px;
 }
 
@@ -475,8 +477,8 @@ Span 8:    100%
 }
 
 #footer {
-  background-color:#35371c;	
-  color:#999;
+    background-color:#f1e7d7;/*#35371c;*/
+  color:#555;
   text-align:center;
   width:100%;
   padding-top:20px;
