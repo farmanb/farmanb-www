@@ -14,7 +14,7 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/teaching.html</loc>
-		<lastmod>2017-10-08T09:59:57-05:00</lastmod>
+		<lastmod>2017-10-27T10:59:42-05:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1</priority>
 	</url>
@@ -1161,6 +1161,30 @@
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/142/J14/solns/Exam01-142-Solns.pdf</loc>
 		<lastmod>2017-09-15T16:30:51-05:00</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://people.math.sc.edu/farmanb/courses/142/S18/index.html</loc>
+		<lastmod>2017-10-27T10:16:32-05:00</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://people.math.sc.edu/farmanb/courses/142/S18/notes.html</loc>
+		<lastmod>2017-10-27T10:14:35-05:00</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://people.math.sc.edu/farmanb/courses/142/S18/syllabus-111-006.html</loc>
+		<lastmod>2017-10-08T15:16:02-05:00</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://people.math.sc.edu/farmanb/courses/142/S18/syllabus-142-020.html</loc>
+		<lastmod>2017-10-27T10:52:43-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
