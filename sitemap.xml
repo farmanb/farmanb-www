@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://people.math.sc.edu/farmanb/index.html</loc>
-    <lastmod>2017-10-08T09:55:19-05:00</lastmod>
+    <lastmod>2017-11-19T10:03:37-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
     <loc>http://people.math.sc.edu/farmanb/seminars.html</loc>
-    <lastmod>2017-10-08T10:01:46-05:00</lastmod>
+    <lastmod>2017-11-19T10:17:56-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
     <loc>http://people.math.sc.edu/farmanb/teaching.html</loc>
-    <lastmod>2017-10-27T10:59:42-05:00</lastmod>
+    <lastmod>2017-11-19T10:15:36-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
@@ -146,7 +146,7 @@
   </url>
   <url>
     <loc>http://people.math.sc.edu/farmanb/courses/111/F17/notes.html</loc>
-    <lastmod>2017-10-28T19:28:30-05:00</lastmod>
+    <lastmod>2017-11-10T12:56:41-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -315,6 +315,12 @@
   <url>
     <loc>http://people.math.sc.edu/farmanb/courses/111/F17/notes/exam03/11.16.17.pdf</loc>
     <lastmod>2017-10-16T19:28:30-05:00</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://people.math.sc.edu/farmanb/courses/111/F17/notes/final.week/12.7.17.pdf</loc>
+    <lastmod>2017-11-10T12:53:04-05:00</lastmod>
     <changefreq>never</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1477,14 +1483,8 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://people.math.sc.edu/farmanb/CV/CV-BFarman.pdf</loc>
-    <lastmod>2017-10-30T18:45:02-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
     <loc>http://people.math.sc.edu/farmanb/CV/index.html</loc>
-    <lastmod>2017-10-08T11:10:27-05:00</lastmod>
+    <lastmod>2017-11-19T10:29:44-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
@@ -1541,6 +1541,18 @@
     <lastmod>2017-09-15T16:30:49-05:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://people.math.sc.edu/farmanb/CV/pdf/CV-BFarman.pdf</loc>
+    <lastmod>2017-10-30T18:45:02-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://people.math.sc.edu/farmanb/CV/pdf/research.statement.pdf</loc>
+    <lastmod>2017-11-19T10:51:21-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1</priority>
   </url>
   <url>
     <loc>http://people.math.sc.edu/farmanb/images/me.jpg</loc>
