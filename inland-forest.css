@@ -320,4 +320,12 @@ table.section {margin-top:1em;}
 .examtable tfoot {
     font-weight: bold;
 }
+
+strong{
+    font-weight: bold;
+}
+
+em{
+    font-style: italic;
+}
 /* end css.sty */

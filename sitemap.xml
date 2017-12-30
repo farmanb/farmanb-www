@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://people.math.sc.edu/farmanb/index.html</loc>
-    <lastmod>2017-11-19T10:03:37-05:00</lastmod>
+    <lastmod>2017-11-30T12:31:22-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>http://people.math.sc.edu/farmanb/teaching.html</loc>
-    <lastmod>2017-11-19T10:15:36-05:00</lastmod>
+    <lastmod>2017-11-30T10:28:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
@@ -1202,7 +1202,13 @@
   </url>
   <url>
     <loc>http://people.math.sc.edu/farmanb/courses/142/S18/syllabus-142-020.html</loc>
-    <lastmod>2017-10-27T10:52:43-05:00</lastmod>
+    <lastmod>2017-11-30T12:20:17-05:00</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://people.math.sc.edu/farmanb/courses/142/S18/OLD-syllabus-142-020.html</loc>
+    <lastmod>2017-11-30T11:50:12-05:00</lastmod>
     <changefreq>never</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1605,6 +1611,12 @@
   <url>
     <loc>http://people.math.sc.edu/farmanb/images/arrows.png</loc>
     <lastmod>2017-09-15T16:30:51-05:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://people.math.sc.edu/farmanb/images/zhiyuEmail.png</loc>
+    <lastmod>2017-11-30T12:03:30-05:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
