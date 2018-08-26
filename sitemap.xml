@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/index.html</loc>
-		<lastmod>2018-04-13T07:16:04-05:00</lastmod>
+		<lastmod>2018-07-26T17:26:27-05:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1</priority>
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/seminars.html</loc>
-		<lastmod>2017-11-19T10:17:56-05:00</lastmod>
+		<lastmod>2018-07-26T17:27:30-05:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1</priority>
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/teaching.html</loc>
-		<lastmod>2018-04-13T07:19:15-05:00</lastmod>
+		<lastmod>2018-07-26T17:27:36-05:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1</priority>
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/017/F09/index.html</loc>
-		<lastmod>2017-10-08T11:49:24-05:00</lastmod>
+		<lastmod>2018-07-26T17:34:13-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -44,7 +44,7 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/017/S10/index.html</loc>
-		<lastmod>2017-10-08T11:39:21-05:00</lastmod>
+		<lastmod>2018-07-26T17:34:18-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -68,7 +68,7 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/017/Su10/index.html</loc>
-		<lastmod>2017-10-08T11:58:09-05:00</lastmod>
+		<lastmod>2018-07-26T17:34:08-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -92,7 +92,7 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/019/F10/s/index.html</loc>
-		<lastmod>2017-10-08T12:04:34-05:00</lastmod>
+		<lastmod>2018-07-26T17:33:38-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -116,7 +116,7 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/019/F10/w/index.html</loc>
-		<lastmod>2017-10-08T12:09:11-05:00</lastmod>
+		<lastmod>2018-07-26T17:33:31-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -140,19 +140,19 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/111/F17/index.html</loc>
-		<lastmod>2017-10-30T09:10:20-05:00</lastmod>
+		<lastmod>2018-07-26T17:35:45-05:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/111/F17/notes.html</loc>
-		<lastmod>2017-11-10T12:56:41-05:00</lastmod>
+		<lastmod>2018-07-26T17:35:51-05:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/111/F17/syllabus-111-006.html</loc>
-		<lastmod>2017-10-08T15:16:02-05:00</lastmod>
+		<lastmod>2018-07-26T17:35:55-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.8</priority>
 	</url>
@@ -326,7 +326,7 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/111/M13/index.html</loc>
-		<lastmod>2017-10-08T12:47:46-05:00</lastmod>
+		<lastmod>2018-07-26T17:35:58-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -386,7 +386,7 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/111/S15/index.html</loc>
-		<lastmod>2017-10-08T12:44:27-05:00</lastmod>
+		<lastmod>2018-07-26T17:30:37-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -398,7 +398,7 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/111/S15/notes.html</loc>
-		<lastmod>2017-10-08T12:47:09-05:00</lastmod>
+		<lastmod>2018-07-26T17:30:31-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -614,7 +614,7 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/115/F14/index.html</loc>
-		<lastmod>2017-10-08T12:50:59-05:00</lastmod>
+		<lastmod>2018-07-26T17:30:49-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -650,13 +650,13 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/116/notes.html</loc>
-		<lastmod>2017-10-08T10:21:03-05:00</lastmod>
+		<lastmod>2018-07-26T17:31:28-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/116/F13/E1B/index.html</loc>
-		<lastmod>2017-10-08T13:14:02-05:00</lastmod>
+		<lastmod>2018-07-26T17:32:22-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -668,7 +668,7 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/116/F13/E2B/index.html</loc>
-		<lastmod>2017-10-08T13:15:44-05:00</lastmod>
+		<lastmod>2018-07-26T17:32:26-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -722,7 +722,7 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/116/F15/E1B/index.html</loc>
-		<lastmod>2017-10-08T13:36:38-05:00</lastmod>
+		<lastmod>2018-07-26T17:32:35-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -734,7 +734,7 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/116/F15/E2B/index.html</loc>
-		<lastmod>2017-10-08T13:36:47-05:00</lastmod>
+		<lastmod>2018-07-26T17:32:39-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -758,7 +758,7 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/116/F16/E1B/index.html</loc>
-		<lastmod>2017-10-08T13:45:34-05:00</lastmod>
+		<lastmod>2018-07-26T17:32:16-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -770,7 +770,7 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/116/F16/E2B/index.html</loc>
-		<lastmod>2017-10-08T13:46:01-05:00</lastmod>
+		<lastmod>2018-07-26T17:32:03-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -962,13 +962,13 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/122/notes.html</loc>
-		<lastmod>2017-10-08T14:05:59-05:00</lastmod>
+		<lastmod>2018-07-26T17:29:11-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/122/gifs.html</loc>
-		<lastmod>2017-10-08T10:29:19-05:00</lastmod>
+		<lastmod>2018-07-26T17:29:04-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -1112,7 +1112,7 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/122/S17/index.html</loc>
-		<lastmod>2017-10-08T14:07:05-05:00</lastmod>
+		<lastmod>2018-07-26T17:29:23-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -1148,19 +1148,19 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/141/S13/index.html</loc>
-		<lastmod>2017-10-08T14:01:02-05:00</lastmod>
+		<lastmod>2018-07-26T17:29:39-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/142/F12/index.html</loc>
-		<lastmod>2017-10-08T14:03:28-05:00</lastmod>
+		<lastmod>2018-07-26T17:34:58-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/142/J14/index.html</loc>
-		<lastmod>2017-10-08T14:05:01-05:00</lastmod>
+		<lastmod>2018-07-26T17:35:03-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -1190,19 +1190,19 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/142/S18/index.html</loc>
-		<lastmod>2018-03-16T15:51:14-05:00</lastmod>
+		<lastmod>2018-07-26T17:35:07-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/142/S18/notes.html</loc>
-		<lastmod>2018-04-01T21:33:16-05:00</lastmod>
+		<lastmod>2018-07-26T17:34:51-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/142/S18/syllabus-142-020.html</loc>
-		<lastmod>2018-00-15T21:07:45-05:00</lastmod>
+		<lastmod>2018-07-26T17:34:46-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -1382,13 +1382,13 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/170/S14/index.html</loc>
-		<lastmod>2017-10-08T14:09:32-05:00</lastmod>
+		<lastmod>2018-07-26T17:29:52-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/170/S16/index.html</loc>
-		<lastmod>2017-10-08T14:08:39-05:00</lastmod>
+		<lastmod>2018-07-26T17:30:03-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -1400,7 +1400,7 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/courses/170/S16/notes.html</loc>
-		<lastmod>2017-10-08T10:27:15-05:00</lastmod>
+		<lastmod>2018-07-26T17:30:16-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -1652,7 +1652,7 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/CV/index.html</loc>
-		<lastmod>2018-04-13T07:21:26-05:00</lastmod>
+		<lastmod>2018-07-15T06:55:06-05:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1</priority>
 	</url>
@@ -1712,13 +1712,13 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/CV/pdf/CV-BFarman.pdf</loc>
-		<lastmod>2018-04-13T06:59:14-05:00</lastmod>
+		<lastmod>2018-07-26T17:25:55-05:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1</priority>
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/CV/pdf/research.statement.pdf</loc>
-		<lastmod>2017-11-19T10:51:21-05:00</lastmod>
+		<lastmod>2018-06-02T15:43:45-05:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1</priority>
 	</url>
@@ -1904,13 +1904,13 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/seminars/AG/F14/index.html</loc>
-		<lastmod>2017-10-08T14:21:06-05:00</lastmod>
+		<lastmod>2018-07-26T17:28:10-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/seminars/AG/S15/index.html</loc>
-		<lastmod>2017-10-08T14:22:40-05:00</lastmod>
+		<lastmod>2018-07-26T17:28:31-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -1922,13 +1922,13 @@
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/seminars/AG/Su15/index.html</loc>
-		<lastmod>2017-10-08T14:26:03-05:00</lastmod>
+		<lastmod>2018-07-26T17:28:49-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://people.math.sc.edu/farmanb/seminars/ANT/Su16/index.html</loc>
-		<lastmod>2017-10-08T14:27:26-05:00</lastmod>
+		<lastmod>2018-07-26T17:27:55-05:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.5</priority>
 	</url>
